@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1400px;
+  padding-inline: 10px;
+  margin-inline: auto;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
