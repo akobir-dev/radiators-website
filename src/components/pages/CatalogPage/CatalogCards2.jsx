@@ -59,6 +59,9 @@ function CatalogCards2({ data, basket, setBasket }) {
           <Link
             to="/catalog/single-product"
             className="text-[#666666] text-[18px] font-[500]"
+            onClick={() =>
+              localStorage.setItem("selectedProduct", JSON.stringify(data))
+            }
           >
             {data.name}
           </Link>

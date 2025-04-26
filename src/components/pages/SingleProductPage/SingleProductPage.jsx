@@ -3,13 +3,13 @@ import { useState } from "react";
 import Features from "./Features";
 import Description from "./Description";
 
-function CartPage() {
-  const data = JSON.parse(localStorage.getItem("data"));
+function SingleProductPage() {
+  const data = JSON.parse(localStorage.getItem("selectedProduct"));
   const [activeTab, setActiveTab] = useState("Features");
 
   return (
     <>
-      <main className="container">
+      <main className="container mt-[90px]">
         <section className="bg-[#fff] h-auto p-[40px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px]">
           <h1 className="text-[#4B4B4B] text-[44px] font-[500] lg:hidden">
             {data.name}
@@ -153,4 +153,4 @@ function CartPage() {
   );
 }
 
-export default CartPage;
+export default SingleProductPage;
