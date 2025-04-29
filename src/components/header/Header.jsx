@@ -105,9 +105,9 @@ function Header() {
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <BsCart />
               </a>
-              <a href="#" className="text-[#4B4B4B] text-[25px]">
+              <button href="#" className="text-[#4B4B4B] text-[25px]">
                 <RiMenu3Line />
-              </a>
+              </button>
             </div>
           </div>
           <div className="flex items-center justify-between max-xl:hidden">
