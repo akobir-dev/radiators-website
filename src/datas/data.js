@@ -1,0 +1,552 @@
+export const categoryDatas = [
+  {
+    img: "https://akfagroup.com/img/src/avangard/avangard1.jpg",
+    title: "Радиаторы",
+    id: 1,
+  },
+  {
+    img: "https://akfagroup.com/img/src/avangard/avangard2.jpg",
+    title: "Биметаллические радиаторы",
+    id: 2,
+  },
+  {
+    img: "https://www.gazeta.uz/media/img/2020/10/LaPuJ816021426240907_o.jpg",
+    title: "Алюминиевые радиаторы",
+    id: 3,
+  },
+  {
+    img: "https://api.uznews.uz/storage/uploads/posts/temporary/iNvywBUZ2yHtxjJL2aWt.jpg",
+    title: "Трубчатые радиторы",
+    id: 4,
+  },
+  {
+    img: "https://re-st.ru/site/assets/files/25994/radiatory_otopleniia.880x0-is.jpg",
+    title: "Панельные радиаторы",
+    id: 5,
+  },
+  {
+    img: "https://spbteplodom.com/d/44.jpg",
+    title: "Полотенцесушители",
+    id: 6,
+  },
+  {
+    img: "https://otoplenie-doma.in.ua/image/catalog/terma/delfin/terma-delfin-e-3.jpeg",
+    title: "Теплые полы",
+    id: 7,
+  },
+  {
+    img: "https://otoplenie-doma.in.ua/image/cache/catalog/Pokraska/pokraska-radiatorov-grafit-500x500.JPG",
+    title: "Конвекторы",
+    id: 8,
+  },
+];
+export const headerLinks = [
+  {
+    link: "Радиаторы",
+    path: "/catalog",
+    id: 1,
+  },
+  {
+    link: "Полотенцесушители",
+    path: "#",
+    id: 2,
+  },
+  {
+    link: "Конвекторы",
+    path: "#",
+    id: 3,
+  },
+  {
+    link: "Теплые полы",
+    path: "#",
+    id: 4,
+  },
+  {
+    link: "Комплектующие",
+    path: "#",
+    id: 5,
+  },
+  {
+    link: "Бренды",
+    path: "#",
+    id: 6,
+  },
+  {
+    link: "Доставка и оплата",
+    path: "/delivery",
+    id: 7,
+  },
+  {
+    link: "О нас",
+    path: "/about",
+    id: 8,
+  },
+  {
+    link: "Контакты",
+    path: "/contacts",
+    id: 9,
+  },
+];
+export const catalog = [
+  // ТРУБЧАТЫЕ
+  {
+    id: 1,
+    name: "RETROstyle 7 секций",
+    productCode: "100001",
+    originalPrice: 9500,
+    discount: 15,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://santehmarka.ru/image/catalog/blog/10.2020/trubchatye-radiatory-osobennosti-konstrukcii.jpg",
+  },
+  {
+    id: 2,
+    name: "Viadrus Styl 600",
+    productCode: "100002",
+    originalPrice: 9800,
+    discount: 14,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://teplypotok.ru/image/cache/catalog/Foto-Tovarov/Radiatory/Trubchatye/KZTO/Garmonia-A40/500/trubchatyy-radiator-kzto-garmoniya-a40-2-trubnyy-vysotoy-500-mm_6-390x390.jpg",
+  },
+  {
+    id: 3,
+    name: "Zehnder Charleston 305",
+    productCode: "100003",
+    originalPrice: 14500,
+    discount: 12,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://idei.club/uploads/posts/2022-11/thumbs/1667382511_44-idei-club-p-chernie-radiatori-otopleniya-v-interere-pi-47.jpg",
+  },
+  {
+    id: 4,
+    name: "Arbonia 3030",
+    productCode: "100004",
+    originalPrice: 13800,
+    discount: 10,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://www.teplodvor.ru/assets/images/aljuminievye-radiatory.jpg",
+  },
+  {
+    id: 5,
+    name: "Guratec Prado",
+    productCode: "100005",
+    originalPrice: 11200,
+    discount: 9,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://lh4.googleusercontent.com/proxy/nNLlrqF7t767IsobEaWn-BFeEvMMJVVIrsI-NxD58yPCcL_u-0hBK748CMq-VBkiiPJ6ZP2hrtDLl0dbwNX_VMRtQDz5yqmcKLhCJOlBEkpbCKD4410rXUHsjhvdBB6Hlnrk8w",
+  },
+  {
+    id: 6,
+    name: "KZTO Элегант",
+    productCode: "100006",
+    originalPrice: 12500,
+    discount: 11,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://teplo-std.ru/image/cache/catalog/loten/3/544925910-radiator-stalnoj-trubchatyj-vertikalnyj-loten-60x60-vysota-1000-1200x800.jpg",
+  },
+  {
+    id: 7,
+    name: "Brugman Charleston",
+    productCode: "100007",
+    originalPrice: 13600,
+    discount: 13,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://dom-termo.ru/wa-data/public/shop/products/88/70/7088/images/52338/52338.750x0.jpg",
+  },
+  {
+    id: 8,
+    name: "Demrad Retro",
+    productCode: "100008",
+    originalPrice: 9900,
+    discount: 8,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://dom-termo.ru/wa-data/public/shop/products/57/70/7057/images/75196/75196.970x0.jpg",
+  },
+  {
+    id: 9,
+    name: "Luxrad Klass",
+    productCode: "100009",
+    originalPrice: 12700,
+    discount: 10,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHiYDpHlQFlkwdv8CNQ14Q0sAartcJKDARXw&s",
+  },
+  {
+    id: 10,
+    name: "RetroStyle Antik",
+    productCode: "100010",
+    originalPrice: 12000,
+    discount: 12,
+    category: "ТРУБЧАТЫЕ",
+    categoryId: 1,
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3owTL7_fA-uPx3Cv9UrqCKKtzeAHMbxKST7KQ8Njomo8AY_YlcLrYskdon7IWhMaJAkk&usqp=CAU",
+  },
+  // БИМЕТАЛЛИЧЕСКИЕ
+  {
+    id: 11,
+    name: "Rifar Monolit 500",
+    productCode: "100011",
+    originalPrice: 7300,
+    discount: 10,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://www.ovk-piter.ru/thumb/2/A5AYF3ztz017JRptmpW3FQ/580r450/d/radiator_bimetallicheskiy_tsena.jpg",
+  },
+  {
+    id: 12,
+    name: "Royal Thermo BiLiner",
+    productCode: "100012",
+    originalPrice: 8200,
+    discount: 12,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl: "https://radiki.com.ua/images/blog/16/foto_01.jpg",
+  },
+  {
+    id: 13,
+    name: "Sira RS Bimetal",
+    productCode: "100013",
+    originalPrice: 8900,
+    discount: 13,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl: "https://images.satu.kz/213350928_w600_h600_213350928.jpg",
+  },
+  {
+    id: 14,
+    name: "Global Style Plus",
+    productCode: "100014",
+    originalPrice: 9500,
+    discount: 15,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://teplo-std.ru/image/cache/catalog/Royalthermo/6/569884915-radiator-bimetallichesij-pianoforte-500-6-sektsii-silver-satin-seryj-1200x800.png",
+  },
+  {
+    id: 15,
+    name: "TENRAD Bimetall",
+    productCode: "100015",
+    originalPrice: 7800,
+    discount: 11,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://santexprom.ru/uploads/storage/articles/13/preimushhestva-ispolzovaniya-bimetallicheskich-radiatorov-dlya-otopleniya-kvartiry_2.jpg",
+  },
+  {
+    id: 16,
+    name: "Fondital Alustal",
+    productCode: "100016",
+    originalPrice: 9100,
+    discount: 12,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl: "https://royal-thermo.kg/upload/iblock/129/biliner_4_619x619.jpg",
+  },
+  {
+    id: 17,
+    name: "Rifar Base 500",
+    productCode: "100017",
+    originalPrice: 7500,
+    discount: 10,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://i.pinimg.com/736x/8e/95/af/8e95afb36e8b977d4b5274bc2f96e758.jpg",
+  },
+  {
+    id: 18,
+    name: "GLOBAL VOX",
+    productCode: "100018",
+    originalPrice: 8600,
+    discount: 14,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://masterotoplenie.ru/wp-content/uploads/2021/08/vertikalnye-radiatory-otopleniya-28.jpg",
+  },
+  {
+    id: 19,
+    name: "Buderus Logatrend Bimetall",
+    productCode: "100019",
+    originalPrice: 9900,
+    discount: 12,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://happymodern.ru/wp-content/uploads/2015/10/Bimetallicheskie_radiatori_23.png",
+  },
+  {
+    id: 20,
+    name: "Thermex BM Comfort",
+    productCode: "100020",
+    originalPrice: 8700,
+    discount: 10,
+    category: "БИМЕТАЛЛИЧЕСКИЕ",
+    categoryId: 2,
+    imageUrl:
+      "https://masterotoplenie.ru/wp-content/uploads/2021/08/bimetallicheskie-radiatory-otopleniya-55.jpg",
+  },
+  // АЛЮМИНИЕВЫЕ
+  {
+    id: 21,
+    name: "Rifar Alum 500",
+    productCode: "100021",
+    originalPrice: 6900,
+    discount: 9,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://www.dunkan-smolensk.ru/files/gallery/4244/medium/28298_radiator-alyuminiev_1588852243.jpg",
+  },
+  {
+    id: 22,
+    name: "Royal Thermo Revolution",
+    productCode: "100022",
+    originalPrice: 7200,
+    discount: 10,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://static.azbukasantehniki.ru/iblock/109/1090e322903640f3aebab6ef2339255e/ee9c603175a9d716f08dcf5ad1dcb62e.jpg",
+  },
+  {
+    id: 23,
+    name: "Sira Alux",
+    productCode: "100023",
+    originalPrice: 8500,
+    discount: 12,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://otoplenie-doma.in.ua/image/cache/catalog/Pokraska/Chernie-2-500x500.PNG",
+  },
+  {
+    id: 24,
+    name: "Global Klass",
+    productCode: "100024",
+    originalPrice: 7900,
+    discount: 11,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl: "https://kfa.pl/Upload/User/downloads/kafelek/G500F%202.jpg",
+  },
+  {
+    id: 25,
+    name: "TENRAD Aluminium",
+    productCode: "100025",
+    originalPrice: 7100,
+    discount: 10,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://kfa.pl/File/Img/Product/763-080-44/B/KFA-ADR-500-6/kartina_Radiator_ADR_84.png",
+  },
+  {
+    id: 26,
+    name: "Fondital Calidor Super",
+    productCode: "100026",
+    originalPrice: 9300,
+    discount: 13,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://ee2.pigugroup.eu/colours/202/785/18/20278518/alumiiniumradiaator-plus-evo-8-itaalia-aa477-labi_interneti_xbig.jpg",
+  },
+  {
+    id: 27,
+    name: "Rifar Alum Ventil",
+    productCode: "100027",
+    originalPrice: 7100,
+    discount: 10,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://аква-гарант.рус/image/cache/catalog/otoplenie/korvet-200-650x650.jpg",
+  },
+  {
+    id: 28,
+    name: "GLOBAL MIX",
+    productCode: "100028",
+    originalPrice: 8400,
+    discount: 12,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://img.promportal.su/foto/good_fotos/50259/502597618/radiator-alyuminieviy-500-100-6-sekciy_foto_largest.jpg",
+  },
+  {
+    id: 29,
+    name: "Buderus Logatrend Alu",
+    productCode: "100029",
+    originalPrice: 9700,
+    discount: 12,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://www.kwadratura.ru/_mod_files/ce_images/articles/stat_ja_radiator_1.png",
+  },
+  {
+    id: 30,
+    name: "Thermex AL Standard",
+    productCode: "100030",
+    originalPrice: 7800,
+    discount: 11,
+    category: "АЛЮМИНИЕВЫЕ",
+    categoryId: 3,
+    imageUrl:
+      "https://radiators.in.ua/image/cache/catalog/brands/GLOBAL/ekos-600x704.jpg",
+  },
+  // ПАНЕЛЬНЫЕ
+  {
+    id: 31,
+    name: "Zehnder Charleston",
+    productCode: "100031",
+    originalPrice: 24500,
+    discount: 10,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://prisma-sm.ru/upload/iblock/958/fvtz5t0tiovqhyvfyokoljcf642vhlkd.jpg",
+  },
+  {
+    id: 32,
+    name: "Arbonia 3057",
+    productCode: "100032",
+    originalPrice: 27300,
+    discount: 11,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://hotcomfort.com.ua/image/cache/catalog/products/Radiatory/Terra/Terra-22-500x500.jpg",
+  },
+  {
+    id: 33,
+    name: "Kermi Decor-V",
+    productCode: "100033",
+    originalPrice: 22900,
+    discount: 9,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://kotelok.by/upload/iblock/414/414b70f699a466ebda4c05f8ae1abbed.jpg",
+  },
+  {
+    id: 34,
+    name: "Irsap Tesi",
+    productCode: "100034",
+    originalPrice: 26500,
+    discount: 12,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://buderus-ru.ru/upload/iblock/049/04940b1693d54a9e2d2fba7872cd1d98.jpeg",
+  },
+  {
+    id: 35,
+    name: "Vasco Tao",
+    productCode: "100035",
+    originalPrice: 31500,
+    discount: 10,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl: "https://ktl.by/uploads/image/file/105005/4.jpg",
+  },
+  {
+    id: 36,
+    name: "Runtal Diva",
+    productCode: "100036",
+    originalPrice: 28900,
+    discount: 15,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl: "https://aquaterm.by/assets/images/products/10567/cat/111111.jpg",
+  },
+  {
+    id: 37,
+    name: "Buderus Logatrend",
+    productCode: "100037",
+    originalPrice: 23000,
+    discount: 13,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://aquastory.com.ua/image/cache/catalog/radiatory/7/stalnoj-panelnyj-radiator-kermi-fko-11-500-700317931929-1200x800.jpg",
+  },
+  {
+    id: 38,
+    name: "DeLonghi Otranto",
+    productCode: "100038",
+    originalPrice: 29000,
+    discount: 9,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://st12.stpulscen.ru/images/product/435/082/148_original.jpg",
+  },
+  {
+    id: 39,
+    name: "Zeus London",
+    productCode: "100039",
+    originalPrice: 26500,
+    discount: 11,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl: "https://content1.rozetka.com.ua/goods/images/big/331030548.jpg",
+  },
+  {
+    id: 40,
+    name: "Adex Formo",
+    productCode: "100040",
+    originalPrice: 24000,
+    discount: 14,
+    category: "ПАНЕЛЬНЫЕ",
+    categoryId: 4,
+    imageUrl:
+      "https://s.alicdn.com/@sc04/kf/He173c93daba84f9ca7e022fdfee5c837u.jpeg_720x720q50.jpg",
+  },
+];
+export const catalogCategories = [
+  { id: 1, category: "ТРУБЧАТЫЕ" },
+  { id: 2, category: "БИМЕТАЛЛИЧЕСКИЕ" },
+  { id: 3, category: "АЛЮМИНИЕВЫЕ" },
+  { id: 4, category: "ПАНЕЛЬНЫЕ" },
+];
+export const headerImages = [
+  {
+    id: 1,
+    img: "https://kztoradiator.ru/assets/cache_image/resources/3927/k9a9778-obr_1290x720_5f7.webp",
+  },
+  {
+    id: 2,
+    img: "https://cobrio.club/uploads/posts/2022-10/thumbs/1665884971_8-cobrio-club-p-serie-radiatori-v-interere-dizain-instagra-8.jpg",
+  },
+  {
+    id: 3,
+    img: "https://www.keramis.com.ua/wa-data/public/blog/img/5-20.jpg",
+  },
+  {
+    id: 4,
+    img: "https://images.victorianplumbing.co.uk/products/reina-neva-horizontal-double-panel-designer-radiator-white/carouselimages/rndhnv7bd_d1.jpg?origin=rndhnv7bd_d1.jpg&w=675"
+  },
+];
