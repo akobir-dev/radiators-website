@@ -18,7 +18,7 @@ function HomePage() {
     <>
       <HeaderMain />
       <main>
-        <section className="container mb-[90px]" data-aos="fade-left">
+        <section className="container mb-[90px]" data-aos="zoom-in">
           <SectionTitles title={"Каталог"} />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[38px]">
             {categoryDatas.map((categoryData) => {
@@ -41,7 +41,7 @@ function HomePage() {
                   </h3>
                   <Link
                     to="/catalog"
-                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[15px] sm:text-[18px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
+                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[18px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
                   >
                     Перейти в каталог
                   </Link>

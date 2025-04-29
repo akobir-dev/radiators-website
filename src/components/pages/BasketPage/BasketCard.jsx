@@ -30,7 +30,7 @@ function BasketCard({ basketData, setBasket, basket }) {
         productQuantity === 0 ? "hidden" : ""
       }`}
       key={basketData.id}
-      data-aos="fade-left"
+      data-aos="zoom-in"
     >
       <div className="relative w-[106px] md:w-[250px] h-[100%] rounded-[5px] overflow-hidden">
         <p className="absolute text-[#fff] bg-[#46A340] p-[5px] top-[10px] left-[10px] rounded-[5px]">

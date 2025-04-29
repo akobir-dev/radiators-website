@@ -13,7 +13,7 @@ function pageQuestions() {
   return (
     <section
       className="mb-[90px] p-[30px] bg-[#fff] rounded-[5px] flex gap-[40px]"
-      data-aos="fade-up"
+      data-aos="zoom-in"
     >
       <div className="w-[100%] lg:w-[40%] h-[100%]">
         <h1 className="text-[#4B4B4B] text-[28px] font-[500]">
