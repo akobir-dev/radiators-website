@@ -111,7 +111,8 @@ function Header() {
                   <RiMenu3Line />
                 </button>
                 {open && (
-                  <ul className="absolute right-0 mt-2 bg-white p-4 rounded shadow-lg flex flex-col items-start gap-[20px] z-50">
+                  <ul className="absolute right-0 mt-2 bg-white p-4 rounded shadow-lg flex flex-col items-start gap-[20px] z-50"
+                    data-aos="zoom-in-down">
                     <HeaderLinks />
                   </ul>
                 )}

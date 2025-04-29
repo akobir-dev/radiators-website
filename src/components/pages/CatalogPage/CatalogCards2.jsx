@@ -38,7 +38,7 @@ function CatalogCards2({ data, basket, setBasket }) {
     <div
       key={data.id}
       className="flex flex-col gap-[20px] p-[20px] bg-[#fff] rounded-[5px] max-w-[100%] h-auto"
-      data-aos="fade-left"
+      data-aos="zoom-in"
     >
       <div className="relative max-w-[100%] h-[300px]">
         <p

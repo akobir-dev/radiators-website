@@ -17,7 +17,7 @@ function HeaderMain() {
 
   return (
     <section
-      className="min-h-[40vh] flex items-center justify-center h-[100px]"
+      className="min-h-[60vh] flex items-center justify-center"
       style={{
         backgroundImage: `url(${headerImages[index].img})`,
         backgroundSize: "cover",
@@ -28,7 +28,7 @@ function HeaderMain() {
     >
       <div className="container flex items-center justify-between w-[100%]">
         <button
-          className="md:p-[15px] p-[5px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[10px] lg:text-[30px]"
+          className="md:p-[10px] p-[10px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[30px]"
           onClick={() => {
             setIndex((prevIndex) => (prevIndex - 1 + total) % total);
           }}
@@ -36,7 +36,7 @@ function HeaderMain() {
           <IoIosArrowBack />
         </button>
         <button
-          className="md:p-[10px] p-[5px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[10px] md:text-[20px] lg:text-[30px]"
+          className="md:p-[10px] p-[10px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[30px]"
           onClick={() => {
             setIndex((prevIndex) => (prevIndex + 1) % total);
           }}

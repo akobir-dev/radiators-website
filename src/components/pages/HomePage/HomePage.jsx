@@ -28,6 +28,7 @@ function HomePage() {
                 <div
                   key={categoryData.id}
                   className="h-auto max-w-[373px] p-[10px] sm:p-[15px] xl:p-[30px] bg-[#fff] rounded-[5px] flex flex-col gap-[25px]"
+                  data-aos="zoom-in"
                 >
                   <div className="rounded-[5px] overflow-hidden h-[287px] w-[100%]">
                     <img
@@ -50,7 +51,7 @@ function HomePage() {
             })}
           </div>
         </section>
-        <section className="container mb-[90px]" data-aos="fade-left">
+        <section className="container mb-[90px]" data-aos="zoom-in">
           <SectionTitles title={"С кем мы работаем"} />
           <div className="flex flex-wrap gap-[60px] justify-center items-center">
             <div className="max-w-[300px] h-[185px]">
@@ -83,7 +84,7 @@ function HomePage() {
             </div>
           </div>
         </section>
-        <section className="bg-[#fff] mb-[90px]" data-aos="fade-left">
+        <section className="bg-[#fff] mb-[90px]" data-aos="zoom-in">
           <div className="container py-[80px]">
             <SectionTitles title={"О нас"} />
             <div className="flex flex-col lg:flex-row gap-[45px]">
@@ -162,7 +163,7 @@ function HomePage() {
         </section>
         <section
           className="container flex flex-col lg:flex-row items-center gap-[40px] mb-[90px]"
-          data-aos="fade-left"
+          data-aos="zoom-in"
         >
           <div className="md:w-[100%] lg:w-[50%] md:h-[370px] rounded-[5px] overflow-hidden">
             <img
