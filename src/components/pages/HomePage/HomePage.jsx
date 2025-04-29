@@ -22,22 +22,26 @@ function HomePage() {
           <SectionTitles title={"Каталог"} />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[38px]">
             {categoryDatas.map((categoryData) => {
+              console.log(categoryData.img);
+
               return (
                 <div
                   key={categoryData.id}
                   className="h-auto max-w-[373px] p-[10px] sm:p-[15px] xl:p-[30px] bg-[#fff] rounded-[5px] flex flex-col gap-[25px]"
                 >
-                  <img
-                    src={categoryData.img}
-                    alt=""
-                    className="rounded-[5px] h-auto"
-                  />
+                  <div className="rounded-[5px] overflow-hidden h-[287px] w-[100%]">
+                    <img
+                      src={categoryData.img}
+                      alt=""
+                      className="w-[100%] object-cover h-[100%]"
+                    />
+                  </div>
                   <h3 className="text-center text-[#4B4B4B] text-[15px] sm:text-[18px] font-[500]">
                     {categoryData.title}
                   </h3>
                   <Link
                     to="/catalog"
-                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[15px] sm:text-[18px] font-[500]"
+                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[15px] sm:text-[18px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
                   >
                     Перейти в каталог
                   </Link>
@@ -48,27 +52,35 @@ function HomePage() {
         </section>
         <section className="container mb-[90px]" data-aos="fade-left">
           <SectionTitles title={"С кем мы работаем"} />
-          <div className="flex flex-wrap gap-[66px] justify-center items-center">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/2c29/1555/bfd1c7a102fb22411c089e05c701224c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LIT72M7byXoQyTao5N8i3uc2bAOogrF5grPU5rVSPPnMkn~KZ22V7yB7WgHVMGhDhs33zgsxeKpuC-fopu-myDnZnJerV7-FHaZPDrrE3BGu4enhVIQknjx4GqQ-AuO~Ytx08UAkr~Y2AUzQ1ECSvsGOpf22CAGa6e-Ajn9s5wzcpdK-VG~W9Rd6s1ufK9McK1dUuTBmZXbWACRKLasqNRquANDsL0GnmIlIywXoA0oO~q2lWiw8cPs4hO8xjGDwPoTqSl4oId9B0ipSKj4~qj1eZcSF6UluNMlzuCG5xDB38LLFbsuHdN35CJOiFj-KocxbaSZkOpHb1wAWXMYkSw__"
-              alt=""
-              className="h-[185px] max-w-[300px]"
-            />
-            <img
-              src="https://s3-alpha-sig.figma.com/img/2c29/1555/bfd1c7a102fb22411c089e05c701224c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LIT72M7byXoQyTao5N8i3uc2bAOogrF5grPU5rVSPPnMkn~KZ22V7yB7WgHVMGhDhs33zgsxeKpuC-fopu-myDnZnJerV7-FHaZPDrrE3BGu4enhVIQknjx4GqQ-AuO~Ytx08UAkr~Y2AUzQ1ECSvsGOpf22CAGa6e-Ajn9s5wzcpdK-VG~W9Rd6s1ufK9McK1dUuTBmZXbWACRKLasqNRquANDsL0GnmIlIywXoA0oO~q2lWiw8cPs4hO8xjGDwPoTqSl4oId9B0ipSKj4~qj1eZcSF6UluNMlzuCG5xDB38LLFbsuHdN35CJOiFj-KocxbaSZkOpHb1wAWXMYkSw__"
-              alt=""
-              className="h-[185px] max-w-[300px]"
-            />
-            <img
-              src="https://s3-alpha-sig.figma.com/img/58ae/760d/9de575a00805464ea45a3e61fffdd031?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Kv14LkWRV9ycrTdYOTT9tB~58eKKPveBuvxSEf-5EFKbK0U4VvMrJDUj98HV9fqEpD4vuSkshVxXIhStuW9gvbRIQmhyCYIsVW0YAbbKilezbXfDPqKA-LuD6Ec10Ho94r2-nSTyLeYn18qwD1GrCYyv8Rrh1vFI7SuhdfzKEUYBdnOS14YAqohl~bJYJPh60nN5OQEYgyYD-Iyc5AYpnJFjbJKXporGATrFgtt1U-4R2s8YmR2acMOujLf0sUDjkLdKCXSCtH~FBO3hNfcnICknjv2pwmQ6QIuUIaLLolTe3oP9l1RObo8yC~2I0WyWBKQM~9T5ll7r7~QvKcYB9Q__"
-              alt=""
-              className="h-[185px] max-w-[300px]"
-            />
-            <img
-              src="https://s3-alpha-sig.figma.com/img/2c29/1555/bfd1c7a102fb22411c089e05c701224c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LIT72M7byXoQyTao5N8i3uc2bAOogrF5grPU5rVSPPnMkn~KZ22V7yB7WgHVMGhDhs33zgsxeKpuC-fopu-myDnZnJerV7-FHaZPDrrE3BGu4enhVIQknjx4GqQ-AuO~Ytx08UAkr~Y2AUzQ1ECSvsGOpf22CAGa6e-Ajn9s5wzcpdK-VG~W9Rd6s1ufK9McK1dUuTBmZXbWACRKLasqNRquANDsL0GnmIlIywXoA0oO~q2lWiw8cPs4hO8xjGDwPoTqSl4oId9B0ipSKj4~qj1eZcSF6UluNMlzuCG5xDB38LLFbsuHdN35CJOiFj-KocxbaSZkOpHb1wAWXMYkSw__"
-              alt=""
-              className="h-[185px] max-w-[300px]"
-            />
+          <div className="flex flex-wrap gap-[60px] justify-center items-center">
+            <div className="max-w-[300px] h-[185px]">
+              <img
+                src="https://optom-parfume.ru/wp-content/uploads/2022/12/prada-logo-png-transparent.png"
+                alt=""
+                className="h-[100%] object-contain w-[100%]"
+              />
+            </div>
+            <div className="max-w-[300px] h-[185px]">
+              <img
+                src="https://fstok.ru/upload/iblock/875/6ikhav37qqn00wumcjvwknctk143k9di/mars.png"
+                alt=""
+                className="h-[100%] object-contain w-[100%]"
+              />
+            </div>
+            <div className="max-w-[300px] h-[185px]">
+              <img
+                src="https://www.thenextsole.com/storage/RG5OPmKXxIv7QhG0ClxPQrPBdxCbiaLtKgG06KbW.png"
+                alt=""
+                className="h-[100%] object-contain w-[100%]"
+              />
+            </div>
+            <div className="max-w-[300px] h-[185px]">
+              <img
+                src="https://imgresizer.eurosport.com/unsafe/2560x1440/filters:format(png):focal(1265x786:1267x784)/origin-imgresizer.eurosport.com/2023/05/17/3706776-75425448-2560-1440.png"
+                alt=""
+                className="h-[100%] object-contain w-[100%]"
+              />
+            </div>
           </div>
         </section>
         <section className="bg-[#fff] mb-[90px]" data-aos="fade-left">
@@ -140,7 +152,7 @@ function HomePage() {
               </div>
               <div className="h-[100] lg:max-w-[55%] rounded-[5px] overflow-hidden">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/1cb2/9f6b/0867d28e032afff93c12351767f7f8b4?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BB69EIlacCES6HMM-6zaudjCeozSDhO757XdlP-3CA0e2kRTVabSYFWv6A4E6sfu2rQgjGu~xLB6-Y0CQTWHaqllcXd3HuzFSfeG~4~AUoc2~kmi2GaX5VoCtQdWh8hsVHprQZg~wkJgjlQ~s7IeiVs7X3SrjzxUO8Fel4ad9DOeTJnY7QbqNs6gKoQZgzvf1xCCzwHVqMQbD~SsMuKbytlkzSBbW0SG-rvIIAFdseHuylgXKz4Eq2~jBfsMLFQNxc~n2Lanthy1MIJ4ziR1KHLgBijvuvPFJdQmh74yH6ENEHiqFW8qa1-Aqwya00ge2QquPaDM6lFKaO5wgukK8Q__"
+                  src="https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_499147276_329712.jpg"
                   alt=""
                   className="object-cover w-[100%] h-[100%]"
                 />
@@ -154,19 +166,19 @@ function HomePage() {
         >
           <div className="md:w-[100%] lg:w-[50%] md:h-[370px] rounded-[5px] overflow-hidden">
             <img
-              src="https://s3-alpha-sig.figma.com/img/2e52/6519/fa95c4c6a73feebe1aefb12040e5e515?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UK8jzJObACdfvZdl6BWzJfhKPYNehaQ9e9GdrdGSGp953n7QSeqtPSLpByKk5NRrgLChkScLiuANNOLbroPcSEtKzES7PCdSfeUsBZUlZiIlXkImYhAcT7qtuIyuHCzBUn1rgfMm5i8nGvVTRKByjBynISpE3s68LKQug9gOo0RhcY8z5JnCSOJVPlWP0BQuOI-m3IcEbiJ0nE8XuYgKk8QwTh1fDraPStyTqZfy7cRustoTxhu~iB7TdkLHxakCYt6iWIVZGXmJck1bcX6mw1YtyRGnelCwKC2L7PSsXr3eG6Nm3k7m6Rpj99rZuC0~SMHwOpOGfFeNYkAcGWv2UQ__"
+              src="https://deniseleeyohn.com/wp-content/uploads/2014/03/discount.jpg"
               alt=""
               className="w-[100%] h-[100%] object-cover"
             />
           </div>
           <div className="md:w-[100%] md:h-[740px] lg:w-[50%] lg:h-[370px] overflow-hidden flex flex-col gap-[40px]">
             <img
-              src="https://s3-alpha-sig.figma.com/img/2e52/6519/fa95c4c6a73feebe1aefb12040e5e515?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UK8jzJObACdfvZdl6BWzJfhKPYNehaQ9e9GdrdGSGp953n7QSeqtPSLpByKk5NRrgLChkScLiuANNOLbroPcSEtKzES7PCdSfeUsBZUlZiIlXkImYhAcT7qtuIyuHCzBUn1rgfMm5i8nGvVTRKByjBynISpE3s68LKQug9gOo0RhcY8z5JnCSOJVPlWP0BQuOI-m3IcEbiJ0nE8XuYgKk8QwTh1fDraPStyTqZfy7cRustoTxhu~iB7TdkLHxakCYt6iWIVZGXmJck1bcX6mw1YtyRGnelCwKC2L7PSsXr3eG6Nm3k7m6Rpj99rZuC0~SMHwOpOGfFeNYkAcGWv2UQ__"
+              src="https://magicstonegc.com/wp-content/uploads/2016/07/Special-Sale-Pic.png"
               alt=""
               className="w-[100%] h-[50%] rounded-[5px] object-cover"
             />
             <img
-              src="https://s3-alpha-sig.figma.com/img/b0c4/afd5/ca605bb092eeb4d435105cc14d75e027?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OEIXp0Hrcne-m-4oJmmo95A~Ph6olyPURNS16k4iPOt~LoCmJAuWfxK53ZSjYHNsqvmTWH1H9Bm4vwMkJAnUfXKiPfnAXJwzHoUM1MU13dCAVG4TbVQTaB5ufpse6Wfs~DjOV2YCW24imePwgtzqKf8M5fLRL9ciIGL42lssDUqR0PjuQ4IjOtCtlEBaxMJyXg3yb~qq4yotoaW5U3BTdDqXoiBkRR6nLzwMX2cZZmbwOyzuD3VTXQYYnv73OMoYOL-ljGXHng-~d8M~mjqvGR~uN6qWO1SPXfpp2d6xVi06zzjqZvwCcont2BZqpQbAjXKRLnm0gm3ncQLl9QPd~Q__"
+              src="https://ellipsesolutions.com/wp-content/uploads/2022/05/Discounts-in-D365.jpg"
               alt=""
               className="w-[100%] h-[50%] rounded-[5px] object-cover"
             />

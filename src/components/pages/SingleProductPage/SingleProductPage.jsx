@@ -6,6 +6,7 @@ import Description from "./Description";
 function SingleProductPage() {
   const data = JSON.parse(localStorage.getItem("selectedProduct"));
   const [activeTab, setActiveTab] = useState("Features");
+  const buttonActive = localStorage.getItem(`buttonActive_${data.id}`);
 
   return (
     <>
@@ -108,7 +109,9 @@ function SingleProductPage() {
                 </p>
                 <div className="flex flex-col gap-[16px]">
                   <button className="flex items-center justify-center gap-[8px] bg-[#3A8F34] text-[#fff] text-[20px] font-[700] p-[15px_50px] rounded-[5px]">
-                    Добавить в корзину
+                    {buttonActive === "passive"
+                      ? "Добавить в корзину"
+                      : "Добавлено в корзину"}
                     <BsCart2 className="text-[25px]" />
                   </button>
                   <button className="flex items-center justify-center w-[100%] gap-[8px] bg-[#fff] border-3 border-[#3A8F34] text-[#3A8F34] text-[20px] font-[700] p-[15px_50px] rounded-[5px]">

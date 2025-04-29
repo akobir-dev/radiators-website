@@ -7,23 +7,24 @@ import { BsCart } from "react-icons/bs";
 import { RiMenu3Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import HeaderLinks from "./HeaderLinks.jsx";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Header() {
   useEffect(() => {
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        once: true, // only animate once
-      });
-    }, []);
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // only animate once
+    });
+  }, []);
+  const [open, setOpen] = useState(false)
 
   return (
     <>
       <header
-      className="bg-[#fff] py-[10px_30px]"
-      data-aos="fade-down"
+        className="bg-[#fff] py-[10px_30px]"
+        data-aos="fade-down"
       >
         <section className="container">
           <div className="flex flex-col items-center justify-between my-[30px] md:flex-row gap-[16px]">
@@ -105,9 +106,16 @@ function Header() {
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <BsCart />
               </a>
-              <a href="#" className="text-[#4B4B4B] text-[25px]">
-                <RiMenu3Line />
-              </a>
+              <div className="relative">
+                <button className="text-[#4B4B4B] text-[25px]" onClick={() => setOpen(!open)}>
+                  <RiMenu3Line />
+                </button>
+                {open && (
+                  <ul className="absolute right-0 mt-2 bg-white p-4 rounded shadow-lg flex flex-col items-start gap-[20px] z-50">
+                    <HeaderLinks />
+                  </ul>
+                )}
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-between max-xl:hidden">

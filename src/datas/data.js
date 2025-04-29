@@ -1,41 +1,41 @@
 export const categoryDatas = [
   {
-    img: "https://s3-alpha-sig.figma.com/img/38e7/d1f0/ae3ee1b6a67d3eee64b3436f2fefa1ff?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Fcb~jxS7BgOiCpaoTIgTo75OH3OWG6V-IjGK3aWvMoELE-ABMK3KAG1HEgMQH17K-004uuyRBm5GZF0ZUfinx1GseNTR7BKsh-GEBf8qT3KBokwFjlyhusvNX8ii7r~Oc9vNU1L4M3ZUybBMX-Yfopm0oU5lDsfvRRY~BZ1Aow-c9pBnRP2zXOWUCha8-0vnmrSLkL~ygniMMkrfF5TZ6t5dyOSPQghivm5Q~Rh-xndrN68BjFnIGky7GFDprEx22RNNW2RJJ1aviCix2guzI-PIu2owChdVDX~woaqv-6RlfTxNJJLWxWYsGajS6sKjljFcyZuYWx4wbG-hE9WNTw__",
+    img: "https://akfagroup.com/img/src/avangard/avangard1.jpg",
     title: "Радиаторы",
     id: 1,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/d8b9/cf24/64e3a69f4e84d5cf291082f62d21841e?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BccMYUC0psH38Av9bRePxyBFdL7xjV-JO17GI-sxnxh9yXmMg1F9fU8dGkG5~ehxyxBHXRIfdNJIIA5Qkmf5DrMdSl3PEhsKg1y4Ij4u~NbLEmyN1yQenvlmClWVRac61PbIQPkkUR7wz1-YHVeVDAYm8jSpa0pPxsS0TYuAWvh9zzGpmFDKZfhrlfs22tKX28twsShtX~o9yxQSVpJg7TLBlyRYeB3-Bni7zvJone1V8SSFdwevkIG7APDSsRTP3mtXoCcmWtbkg1SM43pKbi4lmwTqVw7m5w922C-B-J7rZFxxvWCe7Ttz8CaO0BB6K7bQR3yPCTLSMwixH7irRQ__",
+    img: "https://akfagroup.com/img/src/avangard/avangard2.jpg",
     title: "Биметаллические радиаторы",
     id: 2,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/3a3c/2dc6/57afdd4f00a515845e2d421cc8e360d1?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=b1EVJIRSeYlRgWUxBOeRFhj7gJ-1~3rDQr80oSb1CMBRF4pD7Ahx~7zKEupGIgAwr6JHWlx5qzqIiCqX0QytKZOSi4v5XmCjdw8kN9iwbEh9BL68yv2VR-TyZC5FpBp5Bjai4P94B1St2byU109Bui4275iAo5ujIALPPPJDr0vmeSbhKmvFnrS4DfLdRdIEOr~6v4WKkK8KBM4g5PfTrIa7P9iUlxy-8EZTfFnvKrVgCUZ-nyV6Sl-zDchcWfTKpcZzxuyGUfi32bTHR5xlHC~mKvpiaMfWn0bNJbUMAa~cQCRkRbYJ2CGFNOSXM2ZGzhF-n25boXQOpBBy5cRDCw__",
+    img: "https://www.gazeta.uz/media/img/2020/10/LaPuJ816021426240907_o.jpg",
     title: "Алюминиевые радиаторы",
     id: 3,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/38e7/d1f0/ae3ee1b6a67d3eee64b3436f2fefa1ff?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Fcb~jxS7BgOiCpaoTIgTo75OH3OWG6V-IjGK3aWvMoELE-ABMK3KAG1HEgMQH17K-004uuyRBm5GZF0ZUfinx1GseNTR7BKsh-GEBf8qT3KBokwFjlyhusvNX8ii7r~Oc9vNU1L4M3ZUybBMX-Yfopm0oU5lDsfvRRY~BZ1Aow-c9pBnRP2zXOWUCha8-0vnmrSLkL~ygniMMkrfF5TZ6t5dyOSPQghivm5Q~Rh-xndrN68BjFnIGky7GFDprEx22RNNW2RJJ1aviCix2guzI-PIu2owChdVDX~woaqv-6RlfTxNJJLWxWYsGajS6sKjljFcyZuYWx4wbG-hE9WNTw__",
+    img: "https://api.uznews.uz/storage/uploads/posts/temporary/iNvywBUZ2yHtxjJL2aWt.jpg",
     title: "Трубчатые радиторы",
     id: 4,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/3a3c/2dc6/57afdd4f00a515845e2d421cc8e360d1?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=b1EVJIRSeYlRgWUxBOeRFhj7gJ-1~3rDQr80oSb1CMBRF4pD7Ahx~7zKEupGIgAwr6JHWlx5qzqIiCqX0QytKZOSi4v5XmCjdw8kN9iwbEh9BL68yv2VR-TyZC5FpBp5Bjai4P94B1St2byU109Bui4275iAo5ujIALPPPJDr0vmeSbhKmvFnrS4DfLdRdIEOr~6v4WKkK8KBM4g5PfTrIa7P9iUlxy-8EZTfFnvKrVgCUZ-nyV6Sl-zDchcWfTKpcZzxuyGUfi32bTHR5xlHC~mKvpiaMfWn0bNJbUMAa~cQCRkRbYJ2CGFNOSXM2ZGzhF-n25boXQOpBBy5cRDCw__",
+    img: "https://re-st.ru/site/assets/files/25994/radiatory_otopleniia.880x0-is.jpg",
     title: "Панельные радиаторы",
     id: 5,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/8267/427c/0189c05ddc995207bc2728531f9660d3?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YbIznT1dhiPZ7b7QfFfcYxZbkRSYi3bx~1uWhMsDG8tYcxOIF08gXNzgawjeA65ICj6PKDnmQStJtelZ14s5IvIl-ooTUMFatBGm8EasTH6RDTVFBtRfxkWf-7U3Fh~FRcsYYAdDLngHmKZ4GhRmd4snFxIuDO96VhMeIY9OFALLbQXXHvILVDy0rdtwQNquBmthRuGkGBNjNgMdezoDFu4P0wiB18C~rfq56LGsPrOXwpfA~rycuCB2pL~TUGpDgzl2zIMju~Boa0bsfRZijQFKd1hyeRiXpHwT23aGT4t3NhG7je1tR4r6SW4Hb0aTJhKcUPetQ5eHuBgSiv-Pbg__",
+    img: "https://spbteplodom.com/d/44.jpg",
     title: "Полотенцесушители",
     id: 6,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/9b04/c757/7d814d220a7ffd5d3ef47fa7e3c9ce03?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tL7FOB4PET2bsql2Xei-hvrxNwE2dQ19h32AzmVnhGc1xWEoFtnqo6~vdpWzjnlwqW2hycH2OzyxcanPYi9vCavgrsbLw29JpBRyfPf0KWACaOJhQJLY-1zYu889giHfR-SvPHamrJOQfj6faqk2lGgDcw6G0dhXh9izMZnZbi8ydjCG1QdRIVcsqmv-v9VyKI96LWONu-gWBow9YK2i~Jr05xJj4XnZgaKWBE5NZIgk3xAigThVC2MVSlFvEjPZJbUr8GO2TSoFh98y-L4GHWqw60HGCiSgOmAG0YzFDcwGtzK9xmInwJ1u-SsOIUh3ffyTLNj8-ZGznFuRwseGYw__",
+    img: "https://otoplenie-doma.in.ua/image/catalog/terma/delfin/terma-delfin-e-3.jpeg",
     title: "Теплые полы",
     id: 7,
   },
   {
-    img: "https://s3-alpha-sig.figma.com/img/5248/4914/753dc4dc23c9427aec4326afcdc3e507?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FIASqrQyi3xLyXUOQ3Wwbm8PHSGFf8MOXUf79cPw8WQpgEz3iBLLzvSMlooYPx6uvGvPthP58l3m3f2UekSN2VEW4uQ93YQ9LnhEp1bBEg9MbzIcmvwyNzxonuxk~xTIZNhTgwauroYAlE8uxBPGAteLcwHzcuskqPO2q~bisDPE0je~f8qrj4XRSG0AuXMAOtXQHr6911CBUPNE30XJuTnAnPF85C9FYRtWa80eYzgiMPbBDL6KCwh~QTzTAySwwuDtzrgmwtM8yo-a4GgW8hJZy1DBsJexBZXb5oDDe9mioBqt1c37bT-gt0tK3hpQRT9EKuPqLURFW~MCfKl8OA__",
+    img: "https://otoplenie-doma.in.ua/image/cache/catalog/Pokraska/pokraska-radiatorov-grafit-500x500.JPG",
     title: "Конвекторы",
     id: 8,
   },
@@ -535,15 +535,18 @@ export const catalogCategories = [
 export const headerImages = [
   {
     id: 1,
-    img: "https://s3-alpha-sig.figma.com/img/ed23/3809/21bc468e2f2d2c35d51570d4c262174d?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=drBLAVEhwytJBTFY2CRdbNeeDJhm1YBAd7ro7Zn6Flu41lge5nvYxjttIGjieTGiQ4LuvSGX0mVNCG3AydCEfSI5LdG5dQ0~hxuurb8ch2Ktq985xxlAejAME66JeGeKTqh948NZ5YoeJsbCvfYUBEuWDlVraWjw6L4fhVrQ4q~w4VfBjsy3C~5gha0fYseJs4xUSJrB-vpZG7WaHWahwugCspcwIFTptEDxcRSh80Jft0MRHeGXaKD54l3pjro3m~G2HPLGCB0aAc2gzGSqBQsOY7g-znoEXgmRi1yBwqoPCIJNLRBtuHucY~Naf7hztA9mWj6wDDj2FNFClZWmkg__",
+    img: "https://kztoradiator.ru/assets/cache_image/resources/3927/k9a9778-obr_1290x720_5f7.webp",
   },
   {
     id: 2,
-    img: "https://s3-alpha-sig.figma.com/img/4633/271b/99ad520ea0f58459ea60eca5bf561300?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Gz5NURvdJCwWSi9cQ63BwtGqQki5acFquAMDWJ1h9UZyKBQQD60F0ra6db2PTUdN4UpT1r5dITN-vhPF8A5tP67e7vRk4ErnbbVmF3Kto0N0gTVjjJoyj2rpiiJsMp2mZJGZJ~nz2pVihrMO1zaWAdfXv97q0jDK1mZKkDlaEry3i3D~01fP3UpYsy-epo6UInqQ68BtYxCd~5jh4jc8jtqJ~Vbp6aT2ahM1ljqChAWo3qPxzRLAoQfVXd7yRscPZnXkWTGNinHQWD3olD8CC2FVnAMg3wXZBYNW4vkmHs3~Jw2mklDmiaHSAOmuzTHXENVLO1wdKhx3qqsnSoaiQg__",
+    img: "https://cobrio.club/uploads/posts/2022-10/thumbs/1665884971_8-cobrio-club-p-serie-radiatori-v-interere-dizain-instagra-8.jpg",
   },
   {
     id: 3,
-    img: "https://santexprom.ru/uploads/storage/articles/13/preimushhestva-ispolzovaniya-bimetallicheskich-radiatorov-dlya-otopleniya-kvartiry_2.jpg",
+    img: "https://www.keramis.com.ua/wa-data/public/blog/img/5-20.jpg",
   },
-  { id: 4, img: "https://kfa.pl/Upload/User/downloads/kafelek/G500F%202.jpg" },
+  {
+    id: 4,
+    img: "https://images.victorianplumbing.co.uk/products/reina-neva-horizontal-double-panel-designer-radiator-white/carouselimages/rndhnv7bd_d1.jpg?origin=rndhnv7bd_d1.jpg&w=675"
+  },
 ];
