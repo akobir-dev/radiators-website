@@ -13,6 +13,12 @@ function HomePage() {
       once: true, // only animate once
     });
   }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <>
@@ -22,14 +28,13 @@ function HomePage() {
           <SectionTitles title={"Каталог"} />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[38px]">
             {categoryDatas.map((categoryData) => {
-              console.log(categoryData.img);
 
               return (
                 <div
                   key={categoryData.id}
-                  className="h-auto max-w-[373px] p-[10px] sm:p-[15px] xl:p-[30px] bg-[#fff] rounded-[5px] flex flex-col gap-[25px]"
+                  className="h-auto max-w-[373px] p-[10px] sm:p-[15px] xl:p-[30px] bg-[#fff] rounded-[5px] flex flex-col gap-[15px] sm:gap-[25px]"
                 >
-                  <div className="rounded-[5px] overflow-hidden h-[287px] w-[100%]">
+                  <div className="rounded-[5px] overflow-hidden h-[150px] sm:h-[300px] w-[100%]">
                     <img
                       src={categoryData.img}
                       alt=""
@@ -41,7 +46,7 @@ function HomePage() {
                   </h3>
                   <Link
                     to="/catalog"
-                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[18px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
+                    className="p-[5px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[18px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
                   >
                     Перейти в каталог
                   </Link>

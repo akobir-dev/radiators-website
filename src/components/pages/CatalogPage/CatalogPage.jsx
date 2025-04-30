@@ -14,6 +14,13 @@ function CatalogPage({ basket, setBasket }) {
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <main>
       <section className="container mb-[90px]">
@@ -27,9 +34,8 @@ function CatalogPage({ basket, setBasket }) {
           >
             <button
               onClick={() => setSelectedCategory(0)}
-              className={`text-[18px] font-[500] ${
-                selectedCategory == 0 ? "text-[#3A8F34]" : "text-[#4B4B4B]"
-              }`}
+              className={`text-[18px] font-[500] ${selectedCategory == 0 ? "text-[#3A8F34]" : "text-[#4B4B4B]"
+                }`}
             >
               ВСЕ
             </button>

@@ -28,7 +28,7 @@ function HeaderMain() {
     >
       <div className="container flex items-center justify-between w-[100%]">
         <button
-          className="md:p-[10px] p-[5px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[10px] md:text-[20px] lg:text-[30px]"
+          className="md:p-[10px] p-[5px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[25px] md:text-[20px] lg:text-[30px]"
           onClick={() => {
             setIndex((prevIndex) => (prevIndex - 1 + total) % total);
           }}
@@ -36,7 +36,7 @@ function HeaderMain() {
           <IoIosArrowBack />
         </button>
         <button
-          className="md:p-[10px] p-[5px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[10px] md:text-[20px] lg:text-[30px]"
+          className="md:p-[10px] p-[5px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[25px] md:text-[20px] lg:text-[30px]"
           onClick={() => {
             setIndex((prevIndex) => (prevIndex + 1) % total);
           }}

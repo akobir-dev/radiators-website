@@ -328,7 +328,7 @@ export const catalog = [
     category: "АЛЮМИНИЕВЫЕ",
     categoryId: 3,
     imageUrl:
-      "https://static.azbukasantehniki.ru/iblock/109/1090e322903640f3aebab6ef2339255e/ee9c603175a9d716f08dcf5ad1dcb62e.jpg",
+      "https://media.istockphoto.com/id/545651920/photo/retro-style-radiator.jpg?s=612x612&w=0&k=20&c=XWHH7vMKNnsZ_J3Pyrl7WSZQhmmj5GIuy6x7q4ybofw=",
   },
   {
     id: 23,
@@ -438,7 +438,7 @@ export const catalog = [
     category: "ПАНЕЛЬНЫЕ",
     categoryId: 4,
     imageUrl:
-      "https://hotcomfort.com.ua/image/cache/catalog/products/Radiatory/Terra/Terra-22-500x500.jpg",
+      "https://media.screwfix.com/is/image/ae235/radiator_buying_guide_2_image_banner_mobile?op_sharpen=1&wid=634&hei=491&dpr=on",
   },
   {
     id: 33,

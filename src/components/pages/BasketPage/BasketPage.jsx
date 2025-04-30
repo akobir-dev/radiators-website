@@ -1,6 +1,6 @@
 import SectionTitles from "../../sectionTitles/sectionTitles.jsx";
 import BasketCard from "./BasketCard.jsx";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -9,6 +9,23 @@ function BasketPage({ basket, setBasket }) {
     AOS.init({
       duration: 1000, // animation duration in ms
       once: true, // only animate once
+    });
+  }, []);
+  const [totalPrice, setTotalPrice] = useState(0)
+  useEffect(() => {
+    const total = basket.reduce((sum, item) => {
+      const quantity = Number(localStorage.getItem(`productQuantity_${item.id}`)) || 1;
+      const unitPrice = item.discount
+        ? item.originalPrice - (item.originalPrice * item.discount) / 100
+        : item.originalPrice;
+      return sum + unitPrice * quantity;
+    }, 0);
+    setTotalPrice(total);
+  }, [basket]);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
   }, []);
 
@@ -23,19 +40,21 @@ function BasketPage({ basket, setBasket }) {
               basketData={basketData}
               setBasket={setBasket}
               basket={basket}
+              totalPrice={totalPrice}
+              setTotalPrice={setTotalPrice}
             />
           ))}
         </div>
         <div
-        className="bg-[#fff] sticky top-[20px] h-[580px] p-[30px] w-[100%] lg:w-[50%]"
-        data-aos="fade-left"
+          className="bg-[#fff] sticky top-[20px] h-[580px] p-[30px] w-[100%] lg:w-[50%]"
+          data-aos="fade-left"
         >
           <div className="flex flex-col gap-[10px] mb-[35px]">
             <p className="text-[#4B4B4B] text-[28px] font-[500] flex justify-between">
-              Итого <span>65 940 ₽</span>
+              Итого <span>{totalPrice} ₽</span>
             </p>
             <p className="text-[#4B4B4B] text-[22px] font-[400] flex items-center justify-between">
-              Количество: <span>6 товаров</span>
+              Количество: <span>{basket.length} товаров</span>
             </p>
           </div>
           <div>

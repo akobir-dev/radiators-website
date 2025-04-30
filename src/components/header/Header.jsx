@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 import { IoIosSearch } from "react-icons/io";
 import { CiCalculator1 } from "react-icons/ci";
 import { BsCart } from "react-icons/bs";
-import { RiMenu3Line } from "react-icons/ri";
+import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import HeaderLinks from "./HeaderLinks.jsx";
 import { useEffect, useState } from "react";
@@ -94,24 +94,24 @@ function Header() {
               </button>
             </div>
             <div className="flex gap-[40px] sm:gap-[66px] items-center xl:hidden">
-              <a href="#" className="text-[#4B4B4B] text-[25px]">
+              <Link to="/contacts" className="text-[#4B4B4B] text-[25px]">
                 <FiPhone />
-              </a>
+              </Link>
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <GrLocation />
               </a>
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <IoIosSearch />
               </a>
-              <a href="#" className="text-[#4B4B4B] text-[25px]">
+              <Link to="/basket" className="text-[#4B4B4B] text-[25px]">
                 <BsCart />
-              </a>
+              </Link>
               <div className="relative">
                 <button className="text-[#4B4B4B] text-[25px]" onClick={() => setOpen(!open)}>
-                  <RiMenu3Line />
+                  <AiOutlineMenu />
                 </button>
                 {open && (
-                  <ul className="absolute right-0 mt-2 bg-white p-4 rounded shadow-lg flex flex-col items-start gap-[20px] z-50"
+                  <ul className="absolute right-0 mt-2 bg-white z-auto p-4 rounded shadow-lg flex flex-col items-start gap-[20px]"
                     data-aos="zoom-in-down">
                     <HeaderLinks />
                   </ul>
