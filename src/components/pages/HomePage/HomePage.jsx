@@ -33,7 +33,7 @@ function HomePage() {
                   className="h-auto max-w-[373px] p-[10px] sm:p-[15px] xl:p-[30px] bg-[#fff] rounded-[5px] flex flex-col gap-[25px]"
                   data-aos="zoom-in"
                 >
-                  <div className="rounded-[5px] overflow-hidden h-[287px] w-[100%]">
+                  <div className="rounded-[5px] overflow-hidden h-[200px] sm:h-[287px] w-[100%]">
                     <img
                       src={categoryData.img}
                       alt=""
