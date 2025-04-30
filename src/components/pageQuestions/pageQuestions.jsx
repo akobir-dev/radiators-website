@@ -12,7 +12,7 @@ function pageQuestions() {
 
   return (
     <section
-      className="mb-[90px] p-[30px] bg-[#fff] rounded-[5px] flex gap-[40px]"
+      className="mb-[90px] p-[30px] bg-[#fff] rounded-[5px] flex gap-[40px] shadow-lg"
       data-aos="zoom-in"
     >
       <div className="w-[100%] lg:w-[40%] h-[100%]">
@@ -72,7 +72,7 @@ function pageQuestions() {
       </div>
       <div className="hidden lg:flex w-[60%] rounded-[5px] overflow-hidden">
         <img
-          src="https://s3-alpha-sig.figma.com/img/ed23/3809/21bc468e2f2d2c35d51570d4c262174d?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IJ5mG1qMczIy0Etf2PFWHOEE08INl7P~73NI5Bip2hvwEyl7HRYPBeGVhCX3jIsHAMoFlvP-hGEYISYwmmGjRmj6q51McaIQRfxXT8xlp9XnQj9IK8S7XCm1D~L0WVKBwXKHZRWtSbjQ3iIvosLGeCg5UeC9igKwwOvy2h9hlttCFkwNjZNpggmXX5KB-xsNw0Ju9k9rn6fmbxiEiJpatQ2V25Qc8NrdBlVsEfyOvVMTpx1675R78~FxTi~~JPwpw51b7hTQ8IOwXR21-CL0tQNMJ~VkNobYxOJT-7n4aa4lnOxb0-giLifk1LBmLj32L7mc2quJbJqaWzeD7P1O~g__"
+          src="https://www.stelrad.com/wp-content/uploads/2022/04/how-to-stop-radiators-clicking-blog-image-1250x550-1.png"
           alt=""
           className="object-cover h-[100%] w-[100%]"
         />

@@ -12,9 +12,9 @@ import BasketPage from "./components/pages/BasketPage/BasketPage.jsx";
 
 function App() {
   const [basket, setBasket] = useState([]);
-  useEffect(()=>{
+  useEffect(() => {
     localStorage.setItem("basket", JSON.stringify(basket));
-  },[basket])
+  }, [basket])
   return (
     <>
       <Header />
@@ -27,7 +27,7 @@ function App() {
           path="/catalog"
           element={<CatalogPage basket={basket} setBasket={setBasket} />}
         />
-        <Route path="/catalog/single-product" element={<SingleProductPage />} />
+        <Route path="/catalog/single-product" element={<SingleProductPage basket={basket} setBasket={setBasket} />} />
         <Route
           path="/basket"
           element={<BasketPage basket={basket} setBasket={setBasket} />}
