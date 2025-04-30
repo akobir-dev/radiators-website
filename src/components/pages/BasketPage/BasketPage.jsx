@@ -1,10 +1,11 @@
 import SectionTitles from "../../sectionTitles/sectionTitles.jsx";
 import BasketCard from "./BasketCard.jsx";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function BasketPage({ basket, setBasket }) {
+  const [totalPrice, setTotalPrice] = useState(0)
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -45,10 +46,10 @@ function BasketPage({ basket, setBasket }) {
         >
           <div className="flex flex-col gap-[10px] mb-[35px]">
             <p className="text-[#4B4B4B] text-[28px] font-[500] flex justify-between">
-              Итого <span>65 940 ₽</span>
+              Итого <span>{totalPrice} ₽</span>
             </p>
             <p className="text-[#4B4B4B] text-[22px] font-[400] flex items-center justify-between">
-              Количество: <span>6 товаров</span>
+              Количество: <span>{basket.length} товаров</span>
             </p>
           </div>
           <div>
