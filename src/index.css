@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
-html{
+html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+[data-aos] {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+body {
   overflow-x: hidden;
 }
 

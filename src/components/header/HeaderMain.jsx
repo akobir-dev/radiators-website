@@ -17,16 +17,11 @@ function HeaderMain() {
 
   return (
     <section
-      className="min-h-[60vh] flex items-center justify-center"
-      style={{
-        backgroundImage: `url(${headerImages[index].img})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
+      className="relative min-h-[60vh] flex items-center justify-center"
       data-aos="fade-down"
     >
-      <div className="container flex items-center justify-between w-[100%]">
+      <img src={headerImages[index].img} alt="" className="absolute w-[100%] h-[100%] object-cover"/>
+      <div className="z-10 container flex items-center justify-between w-[100%]">
         <button
           className="md:p-[10px] p-[10px] bg-[#fff] text-[#3A8F34] rounded-[50%] text-[30px]"
           onClick={() => {
