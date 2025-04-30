@@ -154,7 +154,7 @@ function HomePage() {
                   заботой о вас!
                 </p>
               </div>
-              <div className="h-[100] lg:max-w-[55%] rounded-[5px] overflow-hidden">
+              <div className="h-auto lg:max-w-[55%] rounded-[5px] overflow-hidden">
                 <img
                   src="https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_499147276_329712.jpg"
                   alt=""
