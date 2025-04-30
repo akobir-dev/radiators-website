@@ -45,7 +45,7 @@ function CatalogPage({ basket, setBasket }) {
           className="flex flex-col xl:flex-row gap-[40px] items-start"
           data-aos="fade-left"
         >
-          <div className="bg-[#fff] xl:sticky top-[20px] w-[100%] sm:w-[48%] xl:w-[20%] h-auto p-[34px_24px] rounded-[5px]">
+          <div className="bg-[#fff] xl:sticky top-[20px] w-[100%] sm:w-[48%] xl:w-[20%] h-auto p-[34px_24px] rounded-[5px] shadow-lg">
             <h3 className="text-[#4B4B4B] text-[16px] font-[500] mb-[15px]">
               ЦЕНА
             </h3>
