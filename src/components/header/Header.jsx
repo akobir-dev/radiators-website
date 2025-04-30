@@ -94,18 +94,18 @@ function Header() {
               </button>
             </div>
             <div className="flex gap-[40px] sm:gap-[66px] items-center xl:hidden">
-              <a href="#" className="text-[#4B4B4B] text-[25px]">
-                <FiPhone />
-              </a>
+                <Link to="/contacts" className="text-[#4B4B4B] text-[25px]">
+                  <FiPhone />
+                </Link>
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <GrLocation />
               </a>
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <IoIosSearch />
               </a>
-              <a href="#" className="text-[#4B4B4B] text-[25px]">
-                <BsCart />
-              </a>
+              <Link to="/basket" className="text-[#4B4B4B] text-[25px]">
+                  <BsCart />
+                </Link>
               <div className="relative">
                 <button className="text-[#4B4B4B] text-[25px]" onClick={() => setOpen(!open)}>
                   <RiMenu3Line />

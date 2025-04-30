@@ -1,7 +1,12 @@
 import PageQuestions from "../../pageQuestions/pageQuestions.jsx"
 import SectionTitles from "../../sectionTitles/sectionTitles.jsx"
+import { useEffect } from "react";
 
 function ContactsPage() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
     return (
         <>
             <main>

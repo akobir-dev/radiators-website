@@ -1,5 +1,5 @@
 import { BsCart2 } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Features from "./Features";
 import Description from "./Description";
 
@@ -7,6 +7,9 @@ function SingleProductPage() {
   const data = JSON.parse(localStorage.getItem("selectedProduct"));
   const [activeTab, setActiveTab] = useState("Features");
   const buttonActive = localStorage.getItem(`buttonActive_${data.id}`);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <>
@@ -94,15 +97,14 @@ function SingleProductPage() {
                   </span>
                 </p>
                 <p
-                  className={`text-[#4B4B4B] text-[25px] font-[500] flex items-center gap-[10px] ${
-                    data.discount ? "flex" : "hidden"
-                  }`}
+                  className={`text-[#4B4B4B] text-[25px] font-[500] flex items-center gap-[10px] ${data.discount ? "flex" : "hidden"
+                    }`}
                 >
                   Цена со скидкой:
                   <span className="text-[#4B4B4B] text-[40px] font-[700]">
                     {data.discount
                       ? data.originalPrice -
-                        (data.originalPrice * data.discount) / 100
+                      (data.originalPrice * data.discount) / 100
                       : ""}
                     ₽
                   </span>
@@ -125,11 +127,10 @@ function SingleProductPage() {
         <section className="bg-[#fff] h-auto p-[30px] gap-[30px] my-[90px]">
           <div className="flex items-center gap-[30px] mb-[30px]">
             <button
-              className={`text-[20px] font-[300]${
-                activeTab === "Features"
-                  ? "text-[#3A8F34] underline font-[400]"
-                  : "text-[#939393]"
-              }`}
+              className={`text-[20px] font-[300]${activeTab === "Features"
+                ? "text-[#3A8F34] underline font-[400]"
+                : "text-[#939393]"
+                }`}
               onClick={() => {
                 setActiveTab("Features");
               }}
@@ -137,11 +138,10 @@ function SingleProductPage() {
               Характеристики
             </button>
             <button
-              className={`text-[20px] font-[300]${
-                activeTab === "Description"
-                  ? "text-[#3A8F34] underline font-[400]"
-                  : "text-[#939393]"
-              }`}
+              className={`text-[20px] font-[300]${activeTab === "Description"
+                ? "text-[#3A8F34] underline font-[400]"
+                : "text-[#939393]"
+                }`}
               onClick={() => {
                 setActiveTab("Description");
               }}

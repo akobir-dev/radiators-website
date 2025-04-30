@@ -2,10 +2,13 @@ import PageQuestions from "../../pageQuestions/pageQuestions.jsx";
 import SectionTitles from "../../sectionTitles/sectionTitles.jsx";
 import Delivery from "./Delivery.jsx";
 import Payment from "./Payment.jsx";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function DeliveryPage() {
   const [activeTab, setActiveTab] = useState("delivery");
+  useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
 
   return (
     <>

@@ -4,8 +4,13 @@ import ArticleLists from "./ArticleLists.jsx"
 import Paragraph from "./Paragraph.jsx"
 import SectionTitles from "../../sectionTitles/sectionTitles.jsx"
 import PageQuestions from "../../pageQuestions/pageQuestions.jsx"
+import { useEffect } from "react"
 
 function AboutPage() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
     return (
         <>
             <main>

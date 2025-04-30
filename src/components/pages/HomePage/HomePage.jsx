@@ -13,6 +13,9 @@ function HomePage() {
       once: true, // only animate once
     });
   }, []);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <>
@@ -42,7 +45,7 @@ function HomePage() {
                   </h3>
                   <Link
                     to="/catalog"
-                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[15px] sm:text-[18px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
+                    className="p-[10px_10px] sm:p-[10px_20px] border-[3px] border-[#3A8F34] text-[#3A8F34] text-center rounded-[5px] text-[12px] sm:text-[15px] font-[500] hover:bg-[#3A8F34] hover:text-[#fff] duration-150"
                   >
                     Перейти в каталог
                   </Link>

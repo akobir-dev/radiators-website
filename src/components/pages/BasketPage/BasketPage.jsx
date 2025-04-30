@@ -11,6 +11,19 @@ function BasketPage({ basket, setBasket }) {
       once: true, // only animate once
     });
   }, []);
+  useEffect(() => {
+    const total = basket.reduce((sum, item) => {
+      const quantity = Number(localStorage.getItem(`productQuantity_${item.id}`)) || 1;
+      const unitPrice = item.discount
+        ? item.originalPrice - (item.originalPrice * item.discount) / 100
+        : item.originalPrice;
+      return sum + unitPrice * quantity;
+    }, 0);
+    setTotalPrice(total);
+  }, [basket]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <>
@@ -27,8 +40,8 @@ function BasketPage({ basket, setBasket }) {
           ))}
         </div>
         <div
-        className="bg-[#fff] sticky top-[20px] h-[580px] p-[30px] w-[100%] lg:w-[50%]"
-        data-aos="fade-left"
+          className="bg-[#fff] sticky top-[20px] h-[580px] p-[30px] w-[100%] lg:w-[50%]"
+          data-aos="fade-left"
         >
           <div className="flex flex-col gap-[10px] mb-[35px]">
             <p className="text-[#4B4B4B] text-[28px] font-[500] flex justify-between">
