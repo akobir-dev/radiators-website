@@ -36,7 +36,7 @@ function BasketCard({ basketData, setBasket, basket }) {
 
   return (
     <div
-      className={`flex items-center h-[146px] md:h-[260px] gap-[30px] p-[25px] bg-[#fff] rounded-[5px] ${productQuantity === 0 ? "hidden" : ""}`}
+      className={`flex items-center h-[146px] md:h-[260px] gap-[10px] sm:gap-[30px] p-[10px] sm:p-[25px] bg-[#fff] rounded-[5px] ${productQuantity === 0 ? "hidden" : ""}`}
       key={basketData.id}
       data-aos="zoom-in"
     >
@@ -52,8 +52,7 @@ function BasketCard({ basketData, setBasket, basket }) {
           className="w-[100%] h-[100%] object-cover"
         />
       </div>
-
-      <div className="flex justify-between items-center h-[100%] w-[100%]">
+      <div className="flex justify-between gap-[10px] items-center h-[100%] w-[100%]">
         <div className="flex flex-col gap-[15px]">
           <h3 className="text-[#4B4B4B] text-[14px] md:text-[24px] font-[500]">
             {basketData.name}
@@ -101,13 +100,12 @@ function BasketCard({ basketData, setBasket, basket }) {
                   +
                 </button>
               </li>
-              <li className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[500]">
-                {basketData.originalPrice} ₽
+              <li className="text-[#4B4B4B] text-[12px] sm:text-[14px] md:text-[20px] font-[500]">
+                {basketData.discount ? calculatePrice().toFixed(2) : originalPrice} ₽
               </li>
             </ul>
           </div>
         </div>
-
         <div className="flex flex-col items-end justify-between h-[100%]">
           <button
             className="text-[#939393] text-[20px]"
@@ -126,8 +124,8 @@ function BasketCard({ basketData, setBasket, basket }) {
                 {basketData.originalPrice * productQuantity} ₽
               </h3>
             )}
-            <h3 className="text-[#4B4B4B] text-[20px] md:text-[24px] font-[700]">
-              {calculatePrice().toFixed(2)} ₽
+            <h3 className="text-[#4B4B4B] text-[15px] sm:text-[20px] md:text-[24px] font-[700]">
+              {calculatePrice().toFixed(2)}₽
             </h3>
           </div>
         </div>

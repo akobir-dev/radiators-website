@@ -98,7 +98,7 @@ export const catalog = [
     category: "ТРУБЧАТЫЕ",
     categoryId: 1,
     imageUrl:
-      "https://santehmarka.ru/image/catalog/blog/10.2020/trubchatye-radiatory-osobennosti-konstrukcii.jpg",
+      "https://www.plumbworld.co.uk/cdn-cgi/imagedelivery/5FSwPqY3gpGgMk6OKi2kuA/b83a5b3a-9e3f-4400-be30-8e6eb8e99700/w=236",
   },
   {
     id: 2,
