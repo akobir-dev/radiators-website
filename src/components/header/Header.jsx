@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Header() {
+function Header({ basket }) {
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -23,11 +23,11 @@ function Header() {
   return (
     <>
       <header
-        className="bg-[#fff] py-[10px_30px]"
+        className="bg-[#fff] py-[15px_15px]"
         data-aos="fade-down"
       >
         <section className="container">
-          <div className="flex flex-col items-center justify-between my-[30px] md:flex-row gap-[16px]">
+          <div className="flex flex-col items-center justify-between md:flex-row gap-[16px]">
             <Link to="/" className="flex items-center xl:flex">
               <img src={logo} alt="" />
               <div className="flex flex-col">
@@ -94,9 +94,9 @@ function Header() {
               </button>
             </div>
             <div className="flex gap-[40px] sm:gap-[66px] items-center xl:hidden">
-                <Link to="/contacts" className="text-[#4B4B4B] text-[25px]">
-                  <FiPhone />
-                </Link>
+              <Link to="/contacts" className="text-[#4B4B4B] text-[25px]">
+                <FiPhone />
+              </Link>
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <GrLocation />
               </a>
@@ -104,14 +104,14 @@ function Header() {
                 <IoIosSearch />
               </a>
               <Link to="/basket" className="text-[#4B4B4B] text-[25px]">
-                  <BsCart />
-                </Link>
+                <BsCart />
+              </Link>
               <div className="relative">
                 <button className="text-[#4B4B4B] text-[25px]" onClick={() => setOpen(!open)}>
                   <RiMenu3Line />
                 </button>
                 {open && (
-                  <ul className="absolute right-0 mt-2 bg-white p-4 rounded shadow-lg flex flex-col items-start gap-[20px]"
+                  <ul className="flex flex-col absolute right-0 mt-2 bg-white p-4 rounded shadow-lg items-start gap-[20px]"
                     data-aos="zoom-in-down">
                     <HeaderLinks />
                   </ul>
@@ -125,10 +125,11 @@ function Header() {
             </ul>
             <Link
               to="/basket"
-              className="flex items-center gap-[10px] border p-[5px_10px] rounded-[5px] bg-gradient-to-r from-[#3A8F34] to-[#3A8F34] text-white"
+              className="relative flex items-center gap-[10px] border p-[5px_10px] rounded-[5px] bg-gradient-to-r from-[#3A8F34] to-[#3A8F34] text-white"
             >
               <BsCart className="text-[16px]" />
-              <span className="[16px] font-[500]">Корзина</span>
+              <p className="[16px] font-[500]">Корзина</p>
+              <span className="absolute top-0 right-0 bg-[#fff] text-[#3A8F34] text-[10px]  border-[#3A8F34] border-1 px-[5px] rounded-[50%]">{basket.length}</span>
             </Link>
           </div>
         </section>

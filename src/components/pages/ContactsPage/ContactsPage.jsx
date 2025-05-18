@@ -11,7 +11,7 @@ function ContactsPage() {
         <>
             <main>
                 <SectionTitles title={"Контакты"} />
-                <section className="bg-[#fff] mb-[90px] py-[78px]">
+                <section className="bg-[#fff] py-[60px] mb-[50px]">
                     <div className="container">
                         <h2 className="text-[20px] font-[500] mb-[20px]">Где мы находимся:</h2>
                         <iframe

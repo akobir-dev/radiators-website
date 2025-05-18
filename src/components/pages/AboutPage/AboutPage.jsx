@@ -15,7 +15,7 @@ function AboutPage() {
         <>
             <main>
                 <SectionTitles title={"О нас"} />
-                <section className="my-[50px_90px] py-[78px_40px] bg-[#FFFFFF]">
+                <section className="py-[50px] mb-[50px] bg-[#FFFFFF]">
                     <div className="container">
                         <div className="flex flex-col items-center md:flex-row gap-[25px] mb-[40px]">
                             <img src={logo} alt="" className="w-[200px] md:w-[200px] md:h-[160px]" />

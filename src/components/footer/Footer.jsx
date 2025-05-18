@@ -18,8 +18,8 @@ function Footer() {
 
   return (
     <footer
-    className="bg-[#3A8F34] py-[50px_50px] sm:py-[50px_60px] xl:py-[100px_130px]"
-    data-aos="fade-up"
+      className="bg-[#3A8F34] py-[60px_60px] mt-[50px]"
+      data-aos="fade-up"
     >
       <section className="container flex items-center flex-col xl:flex-row xl:items-start gap-[30px] xl:gap-[100px]">
         <div>

@@ -17,7 +17,7 @@ function App() {
   }, [basket])
   return (
     <>
-      <Header />
+      <Header basket={basket} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

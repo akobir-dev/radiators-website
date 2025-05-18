@@ -19,7 +19,7 @@ function CatalogPage({ basket, setBasket }) {
 
   return (
     <main>
-      <section className="container mb-[90px]">
+      <section className="container">
         <div className="flex items-center gap-[48px]">
           <div className="flex items-cneter" data-aos="fade-left">
             <SectionTitles title={"Радиаторы"} />

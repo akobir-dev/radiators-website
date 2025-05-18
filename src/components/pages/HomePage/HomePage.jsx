@@ -21,7 +21,7 @@ function HomePage() {
     <>
       <HeaderMain />
       <main>
-        <section className="container mb-[90px]" data-aos="fade-left">
+        <section className="container" data-aos="fade-left">
           <SectionTitles title={"Каталог"} />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[38px]">
             {categoryDatas.map((categoryData) => {

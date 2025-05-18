@@ -36,7 +36,7 @@ function BasketCard({ basketData, setBasket, basket }) {
 
   return (
     <div
-      className={`flex items-center h-[146px] md:h-[260px] gap-[10px] sm:gap-[30px] p-[10px] sm:p-[25px] bg-[#fff] rounded-[5px] ${productQuantity === 0 ? "hidden" : ""}`}
+      className={`flex items-center h-[150px] gap-[15px] p-[10px] bg-[#fff] rounded-[10px] ${productQuantity === 0 ? "hidden" : ""} hover:shadow-lg`}
       key={basketData.id}
       data-aos="zoom-in"
     >
@@ -53,27 +53,27 @@ function BasketCard({ basketData, setBasket, basket }) {
         />
       </div>
       <div className="flex justify-between gap-[10px] items-center h-[100%] w-[100%]">
-        <div className="flex flex-col gap-[15px]">
-          <h3 className="text-[#4B4B4B] text-[14px] md:text-[24px] font-[500]">
+        <div className="flex flex-col gap-[10px]">
+          <h3 className="text-[#4B4B4B] text-[20px] font-[500]">
             {basketData.name}
           </h3>
           <div className="flex items-center gap-[20px]">
-            <ul className="flex flex-col gap-[10px]">
-              <li className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[400]">
+            <ul className="flex flex-col gap-[5px]">
+              <li className="text-[#4B4B4B] text-[16px] font-[400]">
                 Теплоотдача:
               </li>
-              <li className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[400]">
+              <li className="text-[#4B4B4B] text-[16px] font-[400]">
                 Количество:
               </li>
-              <li className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[400]">
+              <li className="text-[#4B4B4B] text-[16px] font-[400]">
                 Цена за едeницу:
               </li>
             </ul>
-            <ul className="flex flex-col gap-[10px]">
-              <li className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[500]">
+            <ul className="flex flex-col gap-[5px]">
+              <li className="text-[#4B4B4B] text-[16px] font-[500]">
                 20.1 м²
               </li>
-              <li className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[500] flex items-center gap-[5px]">
+              <li className="text-[#4B4B4B] text-[16px] font-[500] flex items-center gap-[5px]">
                 <button
                   className="flex items-center justify-center text-[#939393] text-[15px] w-[20px] h-[20px] border border-[#939393] rounded-full"
                   onClick={() => {
@@ -100,7 +100,7 @@ function BasketCard({ basketData, setBasket, basket }) {
                   +
                 </button>
               </li>
-              <li className="text-[#4B4B4B] text-[12px] sm:text-[14px] md:text-[20px] font-[500]">
+              <li className="text-[#4B4B4B] text-[16px] font-[500]">
                 {basketData.discount ? calculatePrice().toFixed(2) : originalPrice} ₽
               </li>
             </ul>
@@ -120,11 +120,11 @@ function BasketCard({ basketData, setBasket, basket }) {
           </button>
           <div className="flex flex-col items-end">
             {basketData.discount && (
-              <h3 className="text-[#4B4B4B] text-[14px] md:text-[20px] font-[300] line-through">
+              <h3 className="text-[#4B4B4B] text-[20px] font-[300] line-through">
                 {basketData.originalPrice * productQuantity} ₽
               </h3>
             )}
-            <h3 className="text-[#4B4B4B] text-[15px] sm:text-[20px] md:text-[24px] font-[700]">
+            <h3 className="text-[#4B4B4B] text-[20px] font-[700]">
               {calculatePrice().toFixed(2)}₽
             </h3>
           </div>

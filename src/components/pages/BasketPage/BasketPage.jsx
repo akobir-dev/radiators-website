@@ -29,8 +29,8 @@ function BasketPage({ basket, setBasket }) {
   return (
     <>
       <SectionTitles title="Корзина" />
-      <section className="container relative mb-[90px] h-[100%] flex flex-col lg:flex-row gap-[38px] justify-between">
-        <div className="grid grid-cols-1 gap-[38px] w-[100%]">
+      <section className="container relative h-[100%] flex flex-col lg:flex-row gap-[38px] justify-between">
+        <div className="grid grid-cols-1 gap-[0px] w-[100%]">
           {basket.map((basketData) => (
             <BasketCard
               key={basketData.id}
@@ -41,27 +41,27 @@ function BasketPage({ basket, setBasket }) {
           ))}
         </div>
         <div
-          className="bg-[#fff] sticky top-[20px] h-[580px] p-[30px] w-[100%] lg:w-[50%]"
+          className="bg-[#fff] shadow-lg rounded-[10px] sticky top-[20px] h-auto p-[20px] w-[40%]"
           data-aos="fade-left"
         >
-          <div className="flex flex-col gap-[10px] mb-[35px]">
-            <p className="text-[#4B4B4B] text-[28px] font-[500] flex justify-between">
-              Итого <span>{totalPrice} ₽</span>
+          <div className="flex flex-col gap-[10px] mb-[20px]">
+            <p className="text-[#4B4B4B] text-[20px] font-[500] flex justify-between">
+              Итого: <span>{totalPrice} ₽</span>
             </p>
-            <p className="text-[#4B4B4B] text-[22px] font-[400] flex items-center justify-between">
+            <p className="text-[#4B4B4B] text-[20px] font-[400] flex items-center justify-between">
               Количество: <span>{basket.length} товаров</span>
             </p>
           </div>
           <div>
-            <h1 className="text-[#4B4B4B] text-[28px] font-[500] mb-[20px]">
+            <h1 className="text-[#4B4B4B] text-[25px] font-[500] mb-[20px]">
               ОФОРМЛЕНИЕ ЗАКАЗА
             </h1>
             <div className="flex flex-col gap-[15px]">
-              <form>
-                <div className="flex flex-col items-stretch gap-[8px]">
+              <form className="flex flex-col gap-[10px]">
+                <div className="flex flex-col items-stretch gap-[5px]">
                   <label
                     htmlFor="name"
-                    className="text-[#4B4B4B] text-[18px] font-[400]"
+                    className="text-[#4B4B4B] text-[16px] font-[400]"
                   >
                     Ваше имя
                   </label>
@@ -69,13 +69,13 @@ function BasketPage({ basket, setBasket }) {
                     type="text"
                     placeholder="Имя"
                     id="name"
-                    className="p-[10px_20px] border-1 border-[#939393] rounded-[5px] text-[#939393D9] text-[18px] font-[400]"
+                    className="p-[10px_15px] border-1 border-[#939393] rounded-[5px] text-[#939393D9] text-[15px] font-[400]"
                   />
                 </div>
-                <div className="flex flex-col items-stretch gap-[8px]">
+                <div className="flex flex-col items-stretch gap-[5px]">
                   <label
                     htmlFor="phone-number"
-                    className="text-[#4B4B4B] text-[18px] font-[400]"
+                    className="text-[#4B4B4B] text-[16px] font-[400]"
                   >
                     Ваш номер телефона
                   </label>
@@ -83,13 +83,13 @@ function BasketPage({ basket, setBasket }) {
                     type="text"
                     placeholder="Номер телефона"
                     id="phone-number"
-                    className="p-[10px_20px] border-1 border-[#939393] rounded-[5px] text-[#939393D9] text-[18px] font-[400]"
+                    className="p-[10px_15px] border-1 border-[#939393] rounded-[5px] text-[#939393D9] text-[15px] font-[400]"
                   />
                 </div>
-                <div className="flex flex-col items-stretch gap-[8px]">
+                <div className="flex flex-col items-stretch gap-[5px]">
                   <label
                     htmlFor="email"
-                    className="text-[#4B4B4B] text-[18px] font-[400]"
+                    className="text-[#4B4B4B] text-[16px] font-[400]"
                   >
                     Электронная почта
                   </label>
@@ -97,7 +97,7 @@ function BasketPage({ basket, setBasket }) {
                     type="text"
                     placeholder="E-mail"
                     id="email"
-                    className="p-[10px_20px] border-1 border-[#939393] rounded-[5px] text-[#939393D9] text-[18px] font-[400]"
+                    className="p-[10px_15px] border-1 border-[#939393] rounded-[5px] text-[#939393D9] text-[15px] font-[400]"
                   />
                 </div>
               </form>
