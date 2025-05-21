@@ -3,7 +3,6 @@ import CatalogCards from "./CatalogCards.jsx";
 import CatalogButtons from "./CatalogButtons.jsx";
 import { useState, useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 function CatalogPage({ basket, setBasket }) {
   const [selectedCategory, setSelectedCategory] = useState(0);
@@ -17,15 +16,15 @@ function CatalogPage({ basket, setBasket }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+
+
   return (
     <main>
       <section className="container">
-        <div className="flex items-center gap-[48px]">
-          <div className="flex items-cneter" data-aos="fade-left">
-            <SectionTitles title={"Радиаторы"} />
-          </div>
+        <div className="flex items-baseline gap-[48px]">
+          <SectionTitles title={"Радиаторы"} />
           <ul
-            className="flex flex-wrap items-center mt-5 gap-[30px]"
+            className="hidden items-center gap-[30px] lg:flex"
             data-aos="fade-left"
           >
             <button
@@ -45,7 +44,7 @@ function CatalogPage({ basket, setBasket }) {
           className="flex flex-col xl:flex-row gap-[40px] items-start"
           data-aos="fade-left"
         >
-          <div className="bg-[#fff] xl:sticky top-[20px] w-[100%] sm:w-[48%] xl:w-[20%] h-auto p-[34px_24px] rounded-[5px] shadow-lg">
+          <div className="bg-[#fff] xl:sticky top-[160px] w-[100%] sm:w-[48%] xl:w-[20%] h-auto p-[34px_24px] rounded-[5px] shadow-lg">
             <h3 className="text-[#4B4B4B] text-[16px] font-[500] mb-[15px]">
               ЦЕНА
             </h3>

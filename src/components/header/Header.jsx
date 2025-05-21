@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import HeaderLinks from "./HeaderLinks.jsx";
 import { useEffect, useState } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Header({ basket }) {
   useEffect(() => {
@@ -23,7 +22,7 @@ function Header({ basket }) {
   return (
     <>
       <header
-        className="bg-[#fff] py-[15px_15px]"
+        className="bg-[#fff] py-[15px_15px] sticky top-0 z-20 shadow-lg rounded-b-2xl"
         data-aos="fade-down"
       >
         <section className="container">
@@ -103,7 +102,8 @@ function Header({ basket }) {
               <a href="#" className="text-[#4B4B4B] text-[25px]">
                 <IoIosSearch />
               </a>
-              <Link to="/basket" className="text-[#4B4B4B] text-[25px]">
+              <Link to="/basket" className="relative text-[#4B4B4B] text-[25px]">
+                <span className={`${basket.length == 0 ? "hidden" : "inline"} absolute top-0 right-0 bg-[#fff] text-[#3A8F34] text-[10px]  border-[#3A8F34] border-1 px-[5px] rounded-[50%]`}>{basket.length}</span>
                 <BsCart />
               </Link>
               <div className="relative">
@@ -129,7 +129,7 @@ function Header({ basket }) {
             >
               <BsCart className="text-[16px]" />
               <p className="[16px] font-[500]">Корзина</p>
-              <span className="absolute top-0 right-0 bg-[#fff] text-[#3A8F34] text-[10px]  border-[#3A8F34] border-1 px-[5px] rounded-[50%]">{basket.length}</span>
+              <span className={`${basket.length === 0 ? "hidden" : "inline"} absolute top-0 right-0 bg-[#fff] text-[#3A8F34] text-[10px]  border-[#3A8F34] border-1 px-[5px] rounded-[50%]`}>{basket.length}</span>
             </Link>
           </div>
         </section>
