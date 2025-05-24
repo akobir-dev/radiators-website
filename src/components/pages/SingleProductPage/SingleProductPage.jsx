@@ -27,11 +27,11 @@ function SingleProductPage({ basket, setBasket }) {
   return (
     <>
       <main className="container mt-[50px]">
-        <section className="bg-[#fff] h-[500px] p-[20px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px] shadow-lg">
-          <h1 className="text-[#4B4B4B] text-[44px] font-[500] lg:hidden">
+        <section className="bg-[#fff] h-auto p-[20px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px] shadow-lg">
+          <h1 className="text-[#4B4B4B] text-[25px] font-[500] lg:hidden">
             {data.name}
           </h1>
-          <div className="w-[100%] lg:max-w-[40%] h-[100%] relative rounded-[5px] overflow-hidden">
+          <div className="w-[100%] h-[300px] lg:h-[100%] relative rounded-[5px] overflow-hidden">
             <p className="absolute text-[#fff] bg-[#46A340] text-[28px] font-[500] p-[5px_10px] top-5 left-5 rounded-[5px]">
               {data.discount} %
             </p>
@@ -96,7 +96,7 @@ function SingleProductPage({ basket, setBasket }) {
                   </ul>
                 </div>
               </div>
-              <div className="flex justify-between items-end w-[100%]">
+              <div className="flex md:flex-row flex-col justify-between items-stretch md:items-center w-[100%]">
                 <div>
                   <p className="text-[#4B4B4B] text-[20px] sm:text-[25px] font-[500] flex items-center gap-[10px]">
                     Первоначальная цена:
@@ -131,9 +131,6 @@ function SingleProductPage({ basket, setBasket }) {
                       ? "Добавить в корзину"
                       : "Добавлено в корзину"}
                     <BsCart2 className="text-[25px]" />
-                  </button>
-                  <button className="flex items-center justify-center w-[100%] gap-[8px] bg-[#fff] border-3 border-[#3A8F34] text-[#3A8F34] text-[20px] font-[700] p-[15px_30px] sm:p-[15px_50px] rounded-[5px]">
-                    Купить в один клик
                   </button>
                 </div>
               </div>
