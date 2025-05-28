@@ -41,7 +41,7 @@ function BasketPage({ basket, setBasket }) {
           ))}
         </div>
         <div
-          className="bg-[#fff] shadow-lg rounded-[10px] sticky top-[20px] h-auto p-[20px] max-w-[500px]"
+          className="bg-[#fff] shadow-lg rounded-[10px] sticky top-[20px] h-auto p-[20px] w-[450px]"
           data-aos="fade-left"
         >
           <div className="flex flex-col gap-[10px] mb-[20px]">

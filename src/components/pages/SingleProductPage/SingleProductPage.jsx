@@ -8,7 +8,7 @@ function SingleProductPage({ basket, setBasket }) {
   const [activeTab, setActiveTab] = useState("Features");
   const buttonActive = localStorage.getItem(`buttonActive_${data.id}`);
   useEffect(() => {
-    window.scrollTo({ top: 200, behavior: "smooth" });
+    window.scrollTo({ top: 30, behavior: "smooth" });
   }, []);
   const handleClick = () => {
     const isInBasket = basket.some((item) => item.id === data.id);
@@ -31,7 +31,7 @@ function SingleProductPage({ basket, setBasket }) {
           <h1 className="text-[#4B4B4B] text-[25px] font-[500] lg:hidden">
             {data.name}
           </h1>
-          <div className="w-[100%] h-[300px] lg:h-[100%] relative rounded-[5px] overflow-hidden">
+          <div className="w-[100%] h-[300px] lg:h-[500px] relative rounded-[5px] overflow-hidden">
             <p className="absolute text-[#fff] bg-[#46A340] text-[28px] font-[500] p-[5px_10px] top-5 left-5 rounded-[5px]">
               {data.discount} %
             </p>
@@ -48,7 +48,7 @@ function SingleProductPage({ basket, setBasket }) {
             <p className="text-[#939393] text-[15px] font-[300]">
               Код товара: {data.productCode}
             </p>
-            <div className="flex flex-wrap lg:flex-col justify-between items-center flex-row lg:items-start w-[100%]">
+            <div className="flex items-start lg:items-start flex-col md:items-end md:flex-row lg:flex-col justify-between w-[100%]">
               <div className="flex flex-col gap-[5px] my-[5px]">
                 <p className="text-[#4B4B4B] text-[20px] font-[500]">
                   Характеристики
@@ -96,7 +96,7 @@ function SingleProductPage({ basket, setBasket }) {
                   </ul>
                 </div>
               </div>
-              <div className="flex md:flex-row flex-col justify-between items-stretch md:items-center w-[100%]">
+              <div className="w-[50%] lg:w-[100%]">
                 <div>
                   <p className="text-[#4B4B4B] text-[20px] sm:text-[25px] font-[500] flex items-center gap-[10px]">
                     Первоначальная цена:

@@ -42,9 +42,8 @@ function CatalogCards2({ data, basket, setBasket }) {
     >
       <div className="relative max-w-[100%] h-[300px]">
         <p
-          className={`absolute left-2 top-2 text-[#fff] text-[22px] font-[500] p-[5px_10px] bg-[#46A340] rounded-[5px] ${
-            data.discount ? "flex" : "hidden"
-          }`}
+          className={`absolute left-2 top-2 text-[#fff] text-[22px] font-[500] p-[5px_10px] bg-[#46A340] rounded-[5px] ${data.discount ? "flex" : "hidden"
+            }`}
         >
           {`${data.discount}%`}
         </p>
@@ -59,7 +58,7 @@ function CatalogCards2({ data, basket, setBasket }) {
           <Link
             to="/catalog/single-product"
             className="text-[#666666] text-[18px] font-[500]"
-            onClick={() =>  
+            onClick={() =>
               localStorage.setItem("selectedProduct", JSON.stringify(data))
             }
           >
@@ -99,20 +98,19 @@ function CatalogCards2({ data, basket, setBasket }) {
               {data.originalPrice} ₽
             </p>
             <p
-              className={`text-[#4B4B4B] text-[20px] font-[700] ${
-                data.discount ? "flex" : "hidden"
-              }`}
+              className={`text-[#4B4B4B] text-[20px] font-[700] ${data.discount ? "flex" : "hidden"
+                }`}
             >
               {data.discount
                 ? data.originalPrice -
-                  (data.originalPrice * data.discount) / 100
+                (data.originalPrice * data.discount) / 100
                 : ""}
               ₽
             </p>
           </div>
         </div>
         <button
-          className="flex items-center gap-[6px] justify-center rounded-[5px] text-[#fff] text-[20px] font-[500] p-[10px_10px] bg-[#3A8F34] hover:bg-[#fff] border-3 border-[#3A8F34] hover:text-[#3A8F34] duration-300 active:bg-[#3A8F34] active:text-[#fff]"
+          className={`${buttonActive === "passive" ? "text-[#fff] hover:text-[#3A8F34] border-[#3A8F34] bg-[#3A8F34]" : "text-[#fff] border-[#385140] hover:text-[#385140] bg-[#385140]"} flex items-center gap-[6px] justify-center rounded-[5px] text-[20px] font-[500] p-[10px_10px] hover:bg-[#fff] border-3 duration-300`}
           onClick={handleClick}
         >
           {buttonActive === "passive"
