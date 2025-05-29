@@ -27,7 +27,7 @@ function SingleProductPage({ basket, setBasket }) {
   return (
     <>
       <main className="container mt-[50px]">
-        <section className="bg-[#fff] h-auto p-[20px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px] shadow-lg">
+        <section className="bg-[#fff] rounded-[10px] h-auto p-[20px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px] shadow-2xl">
           <h1 className="text-[#4B4B4B] text-[25px] font-[500] lg:hidden">
             {data.name}
           </h1>
@@ -125,19 +125,21 @@ function SingleProductPage({ basket, setBasket }) {
                   </p>
                 </div>
                 <div className="flex flex-col gap-[16px]">
-                  <button className="flex items-center justify-center gap-[8px] bg-[#3A8F34] text-[#fff] text-[20px] font-[700] p-[15px_30px] sm:p-[15px_50px] rounded-[5px]"
-                    onClick={handleClick}>
+                  <button
+                    className={`${buttonActive === "passive" ? "text-[#fff] hover:text-[#3A8F34] border-[#3A8F34] bg-[#3A8F34]" : "text-[#fff] border-[#385140] hover:text-[#385140] bg-[#385140]"} flex items-center gap-[6px] justify-center rounded-[5px] text-[20px] font-[500] p-[10px_10px] hover:bg-[#fff] border-3 duration-300`}
+                    onClick={handleClick}
+                  >
                     {buttonActive === "passive"
                       ? "Добавить в корзину"
                       : "Добавлено в корзину"}
-                    <BsCart2 className="text-[25px]" />
+                    <BsCart2 />
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-[#fff] h-auto p-[30px] gap-[30px] my-[50px] shadow-lg">
+        <section className="bg-[#fff] rounded-[10px] h-auto p-[30px] gap-[30px] my-[50px] shadow-2xl">
           <div className="flex items-center gap-[30px] mb-[30px]">
             <button
               className={`text-[20px] font-[300]${activeTab === "Features"
