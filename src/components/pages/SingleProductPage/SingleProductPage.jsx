@@ -2,11 +2,12 @@ import { BsCart2 } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import Features from "./Features";
 import Description from "./Description";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function SingleProductPage({ basket, setBasket }) {
   const data = JSON.parse(localStorage.getItem("selectedProduct"));
   const [activeTab, setActiveTab] = useState("Features");
-  const buttonActive = localStorage.getItem(`buttonActive_${data.id}`);
   useEffect(() => {
     window.scrollTo({ top: 30, behavior: "smooth" });
   }, []);
@@ -24,10 +25,36 @@ function SingleProductPage({ basket, setBasket }) {
     }
   };
 
+
+  const [buttonActive, setButtonActive] = useState(() => {
+    const storedButtonActive = localStorage.getItem(`buttonActive_${data.id}`);
+    return storedButtonActive || "passive";
+  });
+
+  const [productQuantity, setProductQuantity] = useState(() => {
+    const storedQuantity = localStorage.getItem(`productQuantity_${data.id}`);
+    return storedQuantity ? parseInt(storedQuantity, 10) : 0;
+  });
+
+  useEffect(() => {
+    localStorage.setItem(`buttonActive_${data.id}`, buttonActive);
+  }, [buttonActive, data.id]);
+
+  useEffect(() => {
+    localStorage.setItem(`productQuantity_${data.id}`, productQuantity);
+  }, [productQuantity, data.id]);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <>
       <main className="container mt-[50px]">
-        <section className="bg-[#fff] rounded-[10px] h-auto p-[20px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px] shadow-2xl">
+        <section
+          className="bg-[#fff] rounded-[10px] h-auto p-[20px] flex flex-col lg:flex-row items-start gap-[30px] lg:gap-[50px] shadow-2xl"
+          data-aos="zoom-in"
+        >
           <h1 className="text-[#4B4B4B] text-[25px] font-[500] lg:hidden">
             {data.name}
           </h1>
@@ -124,22 +151,47 @@ function SingleProductPage({ basket, setBasket }) {
                     </span>
                   </p>
                 </div>
-                <div className="flex flex-col gap-[16px]">
+                <div>
                   <button
-                    className={`${buttonActive === "passive" ? "text-[#fff] hover:text-[#3A8F34] border-[#3A8F34] bg-[#3A8F34]" : "text-[#fff] border-[#385140] hover:text-[#385140] bg-[#385140]"} flex items-center gap-[6px] justify-center rounded-[5px] text-[20px] font-[500] p-[10px_10px] hover:bg-[#fff] border-3 duration-300`}
+                    className={`${productQuantity === 0 ? "text-[#fff] hover:text-[#3A8F34] border-[#3A8F34] bg-[#3A8F34]" : "hidden"} flex items-center w-[100%] gap-[6px] justify-center rounded-[5px] text-[20px] font-[500] p-[10px_10px] hover:bg-[#fff] border-3 duration-300`}
                     onClick={handleClick}
                   >
-                    {buttonActive === "passive"
-                      ? "Добавить в корзину"
-                      : "Добавлено в корзину"}
+                    Добавить в корзину
                     <BsCart2 />
                   </button>
+
+                  <div className={`${productQuantity > 0 ? "flex" : "hidden"} items-center gap-[6px] justify-between rounded-[5px] text-[20px] font-[500] p-[10px_10px] border-3 border-amber-500 bg-amber-500`}>
+                    <button
+                      className="hover:bg-[#000] hover:text-[#fff] duration-150 p-[0px_10px] rounded-[5px]"
+                      onClick={() => {
+                        const newQty = productQuantity - 1;
+                        setProductQuantity(newQty);
+                        if (newQty <= 0) {
+                          setButtonActive("passive");
+                          setBasket(basket.filter((item) => item.id !== data.id));
+                          localStorage.removeItem(`productQuantity_${data.id}`);
+                        }
+                      }}
+                    >
+                      -
+                    </button>
+                    <p>{productQuantity}</p>
+                    <button
+                      className="hover:bg-[#000] hover:text-[#fff] duration-150 p-[0px_10px] rounded-[5px]"
+                      onClick={() => setProductQuantity(productQuantity + 1)}
+                    >
+                      +
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="bg-[#fff] rounded-[10px] h-auto p-[30px] gap-[30px] my-[50px] shadow-2xl">
+        <section
+          className="bg-[#fff] rounded-[10px] h-auto p-[30px] gap-[30px] my-[50px] shadow-2xl"
+          data-aos="zoom-in"
+        >
           <div className="flex items-center gap-[30px] mb-[30px]">
             <button
               className={`text-[20px] font-[300]${activeTab === "Features"

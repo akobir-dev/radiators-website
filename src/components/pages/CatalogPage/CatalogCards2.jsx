@@ -111,7 +111,6 @@ function CatalogCards2({ data, basket, setBasket }) {
         </div>
 
         <div>
-          {/* Add to Cart Button */}
           <button
             className={`${productQuantity === 0 ? "text-[#fff] hover:text-[#3A8F34] border-[#3A8F34] bg-[#3A8F34]" : "hidden"} flex items-center w-[100%] gap-[6px] justify-center rounded-[5px] text-[20px] font-[500] p-[10px_10px] hover:bg-[#fff] border-3 duration-300`}
             onClick={handleClick}
@@ -120,7 +119,6 @@ function CatalogCards2({ data, basket, setBasket }) {
             <BsCart2 />
           </button>
 
-          {/* Quantity Counter */}
           <div className={`${productQuantity > 0 ? "flex" : "hidden"} items-center gap-[6px] justify-between rounded-[5px] text-[20px] font-[500] p-[10px_10px] border-3 border-amber-500 bg-amber-500`}>
             <button
               className="hover:bg-[#000] hover:text-[#fff] duration-150 p-[0px_10px] rounded-[5px]"
